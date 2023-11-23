@@ -1,24 +1,6 @@
-Traceback (most recent call last):
-  File "/usr/lib/python3.10/runpy.py", line 187, in _run_module_as_main
-    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
-  File "/usr/lib/python3.10/runpy.py", line 110, in _get_module_details
-    __import__(pkg_name)
-  File "/mnt/nas05/clusterdata01/home2/g.torresgamez/npr_mc2/axolotl/src/axolotl/cli/__init__.py", line 23, in <module>
-    from axolotl.common.cli import TrainerCliArgs, load_model_and_tokenizer
-  File "/mnt/nas05/clusterdata01/home2/g.torresgamez/npr_mc2/axolotl/src/axolotl/common/cli.py", line 11, in <module>
-    from axolotl.utils.models import load_model, load_tokenizer
-  File "/mnt/nas05/clusterdata01/home2/g.torresgamez/npr_mc2/axolotl/src/axolotl/utils/models.py", line 10, in <module>
-    from optimum.bettertransformer import BetterTransformer
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/optimum/bettertransformer/__init__.py", line 14, in <module>
-    from .models import BetterTransformerManager
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/optimum/bettertransformer/models/__init__.py", line 17, in <module>
-    from .decoder_models import (
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/optimum/bettertransformer/models/decoder_models.py", line 18, in <module>
-    from transformers.models.bart.modeling_bart import BartAttention
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/transformers/models/bart/modeling_bart.py", line 52, in <module>
-    from flash_attn import flash_attn_func, flash_attn_varlen_func
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/flash_attn/__init__.py", line 3, in <module>
-    from flash_attn.flash_attn_interface import (
-  File "/home2/g.torresgamez/.local/lib/python3.10/site-packages/flash_attn/flash_attn_interface.py", line 8, in <module>
-    import flash_attn_2_cuda as flash_attn_cuda
-ImportError: /home2/g.torresgamez/.local/lib/python3.10/site-packages/flash_attn_2_cuda.cpython-310-x86_64-linux-gnu.so: undefined symbol: _ZN3c104cuda9SetDeviceEi
+Input Notebook:  LMQG_Inference_Test.ipynb
+Output Notebook: LMQG_Inference_Test.ipynb
+/home2/g.torresgamez/.local/lib/python3.10/site-packages/nbformat/__init__.py:93: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+Executing:   0%|          | 0/6 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:  17%|█▋        | 1/6 [00:05<00:28,  5.66s/cell]Executing:  33%|███▎      | 2/6 [00:06<00:10,  2.66s/cell]Executing:  50%|█████     | 3/6 [00:14<00:15,  5.20s/cell]Executing:  67%|██████▋   | 4/6 [00:15<00:06,  3.40s/cell]Executing:  83%|████████▎ | 5/6 [00:16<00:02,  2.82s/cell]Executing: 100%|██████████| 6/6 [00:17<00:00,  2.09s/cell]Executing: 100%|██████████| 6/6 [00:18<00:00,  3.13s/cell]
