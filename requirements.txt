@@ -1,7 +1,5 @@
 ipykernel==6.27.0
-lmqg==0.1.1
 numpy==1.25.2
 pandas==2.1.3
 papermill==2.4.0
 scikit-learn==1.2.2
-torch==2.0.1
