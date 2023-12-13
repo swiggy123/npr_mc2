@@ -1,0 +1,4 @@
+[submodule "lm-question-generation"]
+	path = lm-question-generation
+	url = https://github.com/swiggy123/lm-question-generation
+	branch = remove-meteor

@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 
 # Modelspecific things
-tmp_ckpt
+*_ckpt/
