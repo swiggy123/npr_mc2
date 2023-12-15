@@ -1,0 +1,241 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: papermill==2.5.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from -r requirements.txt (line 1)) (2.5.0)
+Requirement already satisfied: tenacity>=5.0.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (8.2.3)
+Requirement already satisfied: tqdm>=4.32.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (4.66.1)
+Requirement already satisfied: nbclient>=0.2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: click in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (8.1.7)
+Requirement already satisfied: requests in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (2.31.0)
+Requirement already satisfied: nbformat>=5.1.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (5.9.2)
+Requirement already satisfied: entrypoints in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (0.4)
+Requirement already satisfied: pyyaml in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from papermill==2.5.0->-r requirements.txt (line 1)) (6.0.1)
+Requirement already satisfied: jupyter-client>=6.1.12 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (8.6.0)
+Requirement already satisfied: traitlets>=5.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (5.13.0)
+Requirement already satisfied: jupyter-core!=5.0.*,>=4.12 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (5.5.0)
+Requirement already satisfied: fastjsonschema in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (2.19.0)
+Requirement already satisfied: jsonschema>=2.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (4.20.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests->papermill==2.5.0->-r requirements.txt (line 1)) (2020.6.20)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests->papermill==2.5.0->-r requirements.txt (line 1)) (2.1.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests->papermill==2.5.0->-r requirements.txt (line 1)) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests->papermill==2.5.0->-r requirements.txt (line 1)) (3.3)
+Requirement already satisfied: rpds-py>=0.7.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema>=2.6->nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (0.13.2)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema>=2.6->nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (2023.11.1)
+Requirement already satisfied: referencing>=0.28.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema>=2.6->nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (0.31.0)
+Requirement already satisfied: attrs>=22.2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema>=2.6->nbformat>=5.1.2->papermill==2.5.0->-r requirements.txt (line 1)) (23.1.0)
+Requirement already satisfied: tornado>=6.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jupyter-client>=6.1.12->nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (6.3.3)
+Requirement already satisfied: pyzmq>=23.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jupyter-client>=6.1.12->nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (25.1.1)
+Requirement already satisfied: python-dateutil>=2.8.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jupyter-client>=6.1.12->nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (2.8.2)
+Requirement already satisfied: platformdirs>=2.5 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jupyter-core!=5.0.*,>=4.12->nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (3.11.0)
+Requirement already satisfied: six>=1.5 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from python-dateutil>=2.8.2->jupyter-client>=6.1.12->nbclient>=0.2.0->papermill==2.5.0->-r requirements.txt (line 1)) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Collecting en-core-web-sm==3.7.1
+  Downloading https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 74.8 MB/s eta 0:00:00
+Requirement already satisfied: spacy<3.8.0,>=3.7.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from en-core-web-sm==3.7.1) (3.7.2)
+Requirement already satisfied: preshed<3.1.0,>=3.0.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.0.9)
+Requirement already satisfied: weasel<0.4.0,>=0.1.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.3.4)
+Requirement already satisfied: numpy>=1.19.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.26.2)
+Requirement already satisfied: typer<0.10.0,>=0.3.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.9.0)
+Requirement already satisfied: cymem<2.1.0,>=2.0.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.0.8)
+Requirement already satisfied: requests<3.0.0,>=2.13.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.31.0)
+Requirement already satisfied: packaging>=20.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (23.2)
+Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.1.2)
+Requirement already satisfied: thinc<8.3.0,>=8.1.8 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (8.2.1)
+Requirement already satisfied: jinja2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.1.2)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.10.13)
+Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.0.10)
+Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.0.10)
+Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (6.4.0)
+Requirement already satisfied: setuptools in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (69.0.2)
+Requirement already satisfied: srsly<3.0.0,>=2.4.3 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.4.8)
+Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.0.12)
+Requirement already satisfied: tqdm<5.0.0,>=4.38.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (4.66.1)
+Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (1.0.5)
+Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.3.0)
+Requirement already satisfied: typing-extensions>=4.2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (4.9.0)
+Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (3.3.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.1.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests<3.0.0,>=2.13.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2020.6.20)
+Requirement already satisfied: confection<1.0.0,>=0.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from thinc<8.3.0,>=8.1.8->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.1.4)
+Requirement already satisfied: blis<0.8.0,>=0.7.8 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from thinc<8.3.0,>=8.1.8->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.7.11)
+Requirement already satisfied: click<9.0.0,>=7.1.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from typer<0.10.0,>=0.3.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (8.1.7)
+Requirement already satisfied: cloudpathlib<0.17.0,>=0.7.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from weasel<0.4.0,>=0.1.0->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jinja2->spacy<3.8.0,>=3.7.2->en-core-web-sm==3.7.1) (2.1.3)
+[38;5;2m✔ Download and installation successful[0m
+You can now load the package via spacy.load('en_core_web_sm')
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///mnt/nas05/clusterdata01/home2/g.torresgamez/npr_mc2/lm-question-generation
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: psutil in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (5.9.6)
+Requirement already satisfied: pytextrank in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (3.2.5)
+Requirement already satisfied: torch==1.13.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (1.13.0)
+Requirement already satisfied: tqdm in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (4.66.1)
+Requirement already satisfied: requests in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (2.31.0)
+Requirement already satisfied: pandas in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (2.1.3)
+Requirement already satisfied: numpy in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (1.26.2)
+Requirement already satisfied: transformers==4.26.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (4.26.1)
+Requirement already satisfied: huggingface-hub>=0.12.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.19.4)
+Requirement already satisfied: sentencepiece in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.1.99)
+Requirement already satisfied: datasets in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (2.14.7)
+Requirement already satisfied: spacy in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (3.7.2)
+Requirement already satisfied: sudachipy in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.6.7)
+Requirement already satisfied: sudachidict_core in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (20230927)
+Requirement already satisfied: bert-score in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.3.13)
+Requirement already satisfied: pyemd in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (1.0.0)
+Requirement already satisfied: evaluate in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.4.0)
+Requirement already satisfied: wandb in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.16.0)
+Requirement already satisfied: ray in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (2.8.0)
+Requirement already satisfied: nltk in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (3.8.1)
+Requirement already satisfied: accelerate in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from lmqg==0.1.2) (0.24.1)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from torch==1.13.0->lmqg==0.1.2) (8.5.0.96)
+Requirement already satisfied: typing-extensions in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from torch==1.13.0->lmqg==0.1.2) (4.9.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from torch==1.13.0->lmqg==0.1.2) (11.7.99)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from torch==1.13.0->lmqg==0.1.2) (11.10.3.66)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from torch==1.13.0->lmqg==0.1.2) (11.7.99)
+Requirement already satisfied: filelock in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from transformers==4.26.1->lmqg==0.1.2) (3.13.1)
+Requirement already satisfied: regex!=2019.12.17 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from transformers==4.26.1->lmqg==0.1.2) (2023.10.3)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from transformers==4.26.1->lmqg==0.1.2) (0.13.3)
+Requirement already satisfied: packaging>=20.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from transformers==4.26.1->lmqg==0.1.2) (23.2)
+Requirement already satisfied: pyyaml>=5.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from transformers==4.26.1->lmqg==0.1.2) (6.0.1)
+Requirement already satisfied: wheel in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch==1.13.0->lmqg==0.1.2) (0.42.0)
+Requirement already satisfied: setuptools in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch==1.13.0->lmqg==0.1.2) (69.0.2)
+Requirement already satisfied: fsspec>=2023.5.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from huggingface-hub>=0.12.0->lmqg==0.1.2) (2023.10.0)
+Requirement already satisfied: matplotlib in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from bert-score->lmqg==0.1.2) (3.8.2)
+Requirement already satisfied: pytz>=2020.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pandas->lmqg==0.1.2) (2023.3.post1)
+Requirement already satisfied: tzdata>=2022.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pandas->lmqg==0.1.2) (2023.3)
+Requirement already satisfied: python-dateutil>=2.8.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pandas->lmqg==0.1.2) (2.8.2)
+Requirement already satisfied: aiohttp in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (3.9.0)
+Requirement already satisfied: xxhash in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (3.4.1)
+Requirement already satisfied: dill<0.3.8,>=0.3.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (0.3.7)
+Requirement already satisfied: multiprocess in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (0.70.15)
+Requirement already satisfied: pyarrow-hotfix in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (0.6)
+Requirement already satisfied: pyarrow>=8.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from datasets->lmqg==0.1.2) (13.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests->lmqg==0.1.2) (2020.6.20)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests->lmqg==0.1.2) (2.1.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from requests->lmqg==0.1.2) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /usr/lib/python3/dist-packages (from requests->lmqg==0.1.2) (3.3)
+Requirement already satisfied: responses<0.19 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from evaluate->lmqg==0.1.2) (0.18.0)
+Requirement already satisfied: joblib in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nltk->lmqg==0.1.2) (1.3.2)
+Requirement already satisfied: click in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from nltk->lmqg==0.1.2) (8.1.7)
+Requirement already satisfied: pygments>=2.7.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pytextrank->lmqg==0.1.2) (2.17.2)
+Requirement already satisfied: scipy>=1.7 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pytextrank->lmqg==0.1.2) (1.11.4)
+Requirement already satisfied: graphviz>=0.13 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pytextrank->lmqg==0.1.2) (0.20.1)
+Requirement already satisfied: networkx[default]>=2.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pytextrank->lmqg==0.1.2) (3.2.1)
+Requirement already satisfied: icecream>=2.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from pytextrank->lmqg==0.1.2) (2.1.3)
+Requirement already satisfied: typer<0.10.0,>=0.3.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (0.9.0)
+Requirement already satisfied: pydantic!=1.8,!=1.8.1,<3.0.0,>=1.7.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (1.10.13)
+Requirement already satisfied: langcodes<4.0.0,>=3.2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (3.3.0)
+Requirement already satisfied: preshed<3.1.0,>=3.0.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (3.0.9)
+Requirement already satisfied: thinc<8.3.0,>=8.1.8 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (8.2.1)
+Requirement already satisfied: spacy-loggers<2.0.0,>=1.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (1.0.5)
+Requirement already satisfied: jinja2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (3.1.2)
+Requirement already satisfied: smart-open<7.0.0,>=5.2.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (6.4.0)
+Requirement already satisfied: murmurhash<1.1.0,>=0.28.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (1.0.10)
+Requirement already satisfied: catalogue<2.1.0,>=2.0.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (2.0.10)
+Requirement already satisfied: spacy-legacy<3.1.0,>=3.0.11 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (3.0.12)
+Requirement already satisfied: srsly<3.0.0,>=2.4.3 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (2.4.8)
+Requirement already satisfied: cymem<2.1.0,>=2.0.2 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (2.0.8)
+Requirement already satisfied: weasel<0.4.0,>=0.1.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (0.3.4)
+Requirement already satisfied: wasabi<1.2.0,>=0.9.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from spacy->lmqg==0.1.2) (1.1.2)
+Requirement already satisfied: jsonschema in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (4.20.0)
+Requirement already satisfied: protobuf!=3.19.5,>=3.15.3 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (4.23.4)
+Requirement already satisfied: frozenlist in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (1.4.0)
+Requirement already satisfied: msgpack<2.0.0,>=1.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (1.0.7)
+Requirement already satisfied: aiosignal in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (1.3.1)
+Requirement already satisfied: tensorboardX>=1.9 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from ray->lmqg==0.1.2) (2.6.2.2)
+Requirement already satisfied: GitPython!=3.1.29,>=1.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from wandb->lmqg==0.1.2) (3.1.40)
+Requirement already satisfied: setproctitle in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from wandb->lmqg==0.1.2) (1.3.3)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from wandb->lmqg==0.1.2) (0.4.0)
+Requirement already satisfied: appdirs>=1.4.3 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from wandb->lmqg==0.1.2) (1.4.4)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from wandb->lmqg==0.1.2) (1.36.0)
+Requirement already satisfied: six>=1.4.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from docker-pycreds>=0.4.0->wandb->lmqg==0.1.2) (1.16.0)
+Requirement already satisfied: async-timeout<5.0,>=4.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from aiohttp->datasets->lmqg==0.1.2) (4.0.3)
+Requirement already satisfied: multidict<7.0,>=4.5 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from aiohttp->datasets->lmqg==0.1.2) (6.0.4)
+Requirement already satisfied: yarl<2.0,>=1.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from aiohttp->datasets->lmqg==0.1.2) (1.9.3)
+Requirement already satisfied: attrs>=17.3.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from aiohttp->datasets->lmqg==0.1.2) (23.1.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from GitPython!=3.1.29,>=1.0.0->wandb->lmqg==0.1.2) (4.0.11)
+Requirement already satisfied: colorama>=0.3.9 in /usr/lib/python3/dist-packages (from icecream>=2.1->pytextrank->lmqg==0.1.2) (0.4.4)
+Requirement already satisfied: executing>=0.3.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from icecream>=2.1->pytextrank->lmqg==0.1.2) (2.0.1)
+Requirement already satisfied: asttokens>=2.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from icecream>=2.1->pytextrank->lmqg==0.1.2) (2.4.1)
+Requirement already satisfied: pillow>=8 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from matplotlib->bert-score->lmqg==0.1.2) (10.1.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from matplotlib->bert-score->lmqg==0.1.2) (1.4.5)
+Requirement already satisfied: cycler>=0.10 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from matplotlib->bert-score->lmqg==0.1.2) (0.12.1)
+Requirement already satisfied: contourpy>=1.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from matplotlib->bert-score->lmqg==0.1.2) (1.2.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /usr/lib/python3/dist-packages (from matplotlib->bert-score->lmqg==0.1.2) (2.4.7)
+Requirement already satisfied: fonttools>=4.22.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from matplotlib->bert-score->lmqg==0.1.2) (4.45.0)
+Requirement already satisfied: blis<0.8.0,>=0.7.8 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from thinc<8.3.0,>=8.1.8->spacy->lmqg==0.1.2) (0.7.11)
+Requirement already satisfied: confection<1.0.0,>=0.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from thinc<8.3.0,>=8.1.8->spacy->lmqg==0.1.2) (0.1.4)
+Requirement already satisfied: cloudpathlib<0.17.0,>=0.7.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from weasel<0.4.0,>=0.1.0->spacy->lmqg==0.1.2) (0.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jinja2->spacy->lmqg==0.1.2) (2.1.3)
+Requirement already satisfied: rpds-py>=0.7.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema->ray->lmqg==0.1.2) (0.13.2)
+Requirement already satisfied: referencing>=0.28.4 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema->ray->lmqg==0.1.2) (0.31.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from jsonschema->ray->lmqg==0.1.2) (2023.11.1)
+Requirement already satisfied: smmap<6,>=3.0.1 in /mnt/nas05/clusterdata01/home2/g.torresgamez/.local/lib/python3.10/site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb->lmqg==0.1.2) (5.0.1)
+Installing collected packages: lmqg
+  Running setup.py develop for lmqg
+Successfully installed lmqg
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 8.68 seconds, 66.16 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 7.46 seconds, 1027.73 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 7.24 seconds, 1058.45 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 7.06 seconds, 1086.35 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 11.76 seconds, 48.82 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 7.49 seconds, 979.42 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 7.08 seconds, 1036.90 sentences/sec
+calculating scores...
+computing bert embedding.
+computing greedy matching.
+done in 6.85 seconds, 1071.24 sentences/sec
+{
+    "test": {
+        "BERTScore": 0.8521093290026595,
+        "Bleu_1": 0.16231687202871636,
+        "Bleu_2": 0.08932449176371555,
+        "Bleu_3": 0.04808532765452977,
+        "Bleu_4": 0.030187326027319727,
+        "MoverScore": 0.5546020226847351,
+        "QAAlignedF1Score (BERTScore)": 0.8700510024904611,
+        "QAAlignedF1Score (MoverScore)": 0.5730502942698181,
+        "QAAlignedPrecision (BERTScore)": 0.8793336404206563,
+        "QAAlignedPrecision (MoverScore)": 0.5948806093868161,
+        "QAAlignedRecall (BERTScore)": 0.8611694042222775,
+        "QAAlignedRecall (MoverScore)": 0.5541174363580378,
+        "ROUGE_L": 0.19214383797182247
+    },
+    "validation": {
+        "BERTScore": 0.8537403534098369,
+        "Bleu_1": 0.16311791656619046,
+        "Bleu_2": 0.09046008709134094,
+        "Bleu_3": 0.049235823516480294,
+        "Bleu_4": 0.03176736117417117,
+        "MoverScore": 0.5555301972497909,
+        "QAAlignedF1Score (BERTScore)": 0.8822013183113864,
+        "QAAlignedF1Score (MoverScore)": 0.5821086721095844,
+        "QAAlignedPrecision (BERTScore)": 0.8915149577971969,
+        "QAAlignedPrecision (MoverScore)": 0.6042140938260395,
+        "QAAlignedRecall (BERTScore)": 0.873303385196202,
+        "QAAlignedRecall (MoverScore)": 0.5629541981957342,
+        "ROUGE_L": 0.1942124767206648
+    }
+}

@@ -4,12 +4,11 @@
 #SBATCH --mem=16G
 #SBATCH --gres=gpu:1
 #SBATCH --partition=performance
-#SBATCH --out=slurm/eval_base_out.log
-#SBATCH --err=slurm/eval_base_err.log
+#SBATCH --out=slurm/logs/eval_base_out.txt
+#SBATCH --err=slurm/logs/eval_base_err.txt
 #SBATCH --job-name="LMQG Eval Base"
 python3 -m pip install -r requirements.txt
 python3 -m spacy download en_core_web_sm
 python3 -m pip install -e ./lm-question-generation
 
-NB_PATH="eval_base.ipynb"
-python3 -m papermill $NB_PATH $NB_PATH -k 'python3'
+lmqg-eval -d "StellarMilk/newsqa" -m "lmqg/t5-base-squad-qag" -e "evaluation_base/" -i "paragraph" -o "questions_answers" -l "en" --batch-size 2 --max-length-output 512 --max-length 512
