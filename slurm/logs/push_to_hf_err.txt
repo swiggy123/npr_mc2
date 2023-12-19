@@ -1,367 +1,573 @@
-2023-12-16 01:16:15 INFO     Upload small_finetuned_ckpt/best_model to StellarMilk/t5-small-newsqa-qag-finetuned
-2023-12-16 01:16:15 INFO     use spaCy answer extraction model: positionrank
-2023-12-16 01:16:18 INFO     Model `small_finetuned_ckpt/best_model`
-2023-12-16 01:16:18 INFO     	 * Num of GPU in use: 1
-2023-12-16 01:16:18 INFO     	 * Prefix: True
-2023-12-16 01:16:18 INFO     	 * Language: en (ignore at the training phase)
-pytorch_model.bin:   0%|          | 0.00/242M [00:00<?, ?B/s]pytorch_model.bin:   0%|          | 16.4k/242M [00:00<25:29, 158kB/s]pytorch_model.bin:   3%|▎         | 6.64M/242M [00:00<00:09, 25.8MB/s]pytorch_model.bin:   4%|▎         | 8.75M/242M [00:00<00:12, 18.3MB/s]pytorch_model.bin:   7%|▋         | 15.8M/242M [00:00<00:07, 29.9MB/s]pytorch_model.bin:   8%|▊         | 18.9M/242M [00:01<00:14, 15.8MB/s]pytorch_model.bin:  11%|█▏        | 27.3M/242M [00:01<00:08, 25.1MB/s]pytorch_model.bin:  13%|█▎        | 30.9M/242M [00:01<00:08, 26.1MB/s]pytorch_model.bin:  14%|█▍        | 34.2M/242M [00:01<00:13, 15.7MB/s]pytorch_model.bin:  20%|█▉        | 48.0M/242M [00:02<00:07, 24.6MB/s]pytorch_model.bin:  23%|██▎       | 56.1M/242M [00:02<00:05, 31.9MB/s]pytorch_model.bin:  25%|██▌       | 60.7M/242M [00:02<00:06, 28.0MB/s]pytorch_model.bin:  27%|██▋       | 64.4M/242M [00:03<00:14, 11.9MB/s]pytorch_model.bin:  33%|███▎      | 80.0M/242M [00:03<00:08, 20.0MB/s]pytorch_model.bin:  40%|███▉      | 96.0M/242M [00:04<00:06, 20.9MB/s]pytorch_model.bin:  44%|████▍     | 108M/242M [00:04<00:05, 25.3MB/s] pytorch_model.bin:  46%|████▌     | 111M/242M [00:04<00:05, 26.0MB/s]pytorch_model.bin:  47%|████▋     | 115M/242M [00:05<00:08, 15.8MB/s]pytorch_model.bin:  49%|████▉     | 119M/242M [00:05<00:06, 18.0MB/s]pytorch_model.bin:  51%|█████     | 124M/242M [00:05<00:06, 19.1MB/s]pytorch_model.bin:  53%|█████▎    | 127M/242M [00:06<00:05, 20.4MB/s]pytorch_model.bin:  54%|█████▍    | 130M/242M [00:06<00:07, 14.3MB/s]pytorch_model.bin:  60%|█████▉    | 144M/242M [00:07<00:05, 18.9MB/s]pytorch_model.bin:  66%|██████▌   | 160M/242M [00:07<00:03, 26.6MB/s]pytorch_model.bin:  69%|██████▉   | 168M/242M [00:07<00:02, 32.0MB/s]pytorch_model.bin:  71%|███████   | 172M/242M [00:07<00:02, 31.7MB/s]pytorch_model.bin:  73%|███████▎  | 176M/242M [00:08<00:03, 17.9MB/s]pytorch_model.bin:  79%|███████▉  | 192M/242M [00:08<00:01, 25.5MB/s]pytorch_model.bin:  86%|████████▌ | 208M/242M [00:09<00:01, 31.0MB/s]pytorch_model.bin:  93%|█████████▎| 224M/242M [00:09<00:00, 35.1MB/s]pytorch_model.bin:  96%|█████████▌| 232M/242M [00:09<00:00, 39.8MB/s]pytorch_model.bin:  98%|█████████▊| 237M/242M [00:09<00:00, 33.4MB/s]pytorch_model.bin: 100%|█████████▉| 241M/242M [00:10<00:00, 21.1MB/s]pytorch_model.bin: 100%|██████████| 242M/242M [00:10<00:00, 22.7MB/s]
-spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]spiece.model: 100%|██████████| 792k/792k [00:00<00:00, 2.09MB/s]
+2023-12-19 12:28:24 INFO     Upload base_trained_ckpt/best_model to StellarMilk/t5-base-newsqa-qag-trained
+2023-12-19 12:28:35 INFO     use spaCy answer extraction model: positionrank
+2023-12-19 12:28:38 INFO     Model `base_trained_ckpt/best_model`
+2023-12-19 12:28:38 INFO     	 * Num of GPU in use: 1
+2023-12-19 12:28:38 INFO     	 * Prefix: True
+2023-12-19 12:28:38 INFO     	 * Language: en (ignore at the training phase)
 /home2/g.torresgamez/.local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:127: FutureWarning: 'Repository' (from 'huggingface_hub.repository') is deprecated and will be removed from version '1.0'. Please prefer the http-based alternatives instead. Given its large adoption in legacy code, the complete removal is only planned on next major release.
 For more details, please read https://huggingface.co/docs/huggingface_hub/concepts/git_vs_http.
   warnings.warn(warning_message, FutureWarning)
-Cloning https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned into local empty directory.
-2023-12-16 01:16:33 WARNING  Cloning https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned into local empty directory.
-Download file pytorch_model.bin:   0%|          | 8.00k/231M [00:00<?, ?B/s]
-Download file spiece.model:   4%|▍         | 32.0k/773k [00:00<?, ?B/s][ADownload file pytorch_model.bin:   1%|▏         | 2.98M/231M [00:01<01:16, 3.11MB/s]
+Cloning https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained into local empty directory.
+2023-12-19 12:28:45 WARNING  Cloning https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained into local empty directory.
+Download file pytorch_model.bin:   0%|          | 24.0k/850M [00:00<?, ?B/s]
+Download file spiece.model:   4%|▍         | 32.0k/773k [00:00<?, ?B/s][ADownload file pytorch_model.bin:   0%|          | 608k/850M [00:01<24:53, 597kB/s]
+Download file spiece.model:  33%|███▎      | 256k/773k [00:01<00:02, 229kB/s][A
 
-Clean file spiece.model:   0%|          | 1.00k/773k [00:00<?, ?B/s][A[ADownload file pytorch_model.bin:   3%|▎         | 7.38M/231M [00:02<00:58, 3.99MB/s]Download file pytorch_model.bin:   5%|▌         | 12.5M/231M [00:03<00:49, 4.63MB/s]Download file pytorch_model.bin:   8%|▊         | 17.8M/231M [00:04<00:45, 4.96MB/s]Download file pytorch_model.bin:  10%|▉         | 22.8M/231M [00:05<00:42, 5.09MB/s]Download file pytorch_model.bin:  12%|█▏        | 26.9M/231M [00:06<00:44, 4.82MB/s]Download file pytorch_model.bin:  13%|█▎        | 31.1M/231M [00:07<00:44, 4.66MB/s]Download file pytorch_model.bin:  15%|█▌        | 35.5M/231M [00:08<00:43, 4.67MB/s]Download file pytorch_model.bin:  18%|█▊        | 40.7M/231M [00:09<00:40, 4.91MB/s]Download file pytorch_model.bin:  20%|█▉        | 45.9M/231M [00:10<00:38, 5.06MB/s]Download file pytorch_model.bin:  22%|██▏       | 51.1M/231M [00:11<00:36, 5.17MB/s]Download file pytorch_model.bin:  24%|██▍       | 56.2M/231M [00:12<00:34, 5.24MB/s]Download file pytorch_model.bin:  27%|██▋       | 61.4M/231M [00:13<00:33, 5.29MB/s]Download file pytorch_model.bin:  29%|██▉       | 66.5M/231M [00:14<00:32, 5.30MB/s]Download file pytorch_model.bin:  31%|███       | 71.6M/231M [00:15<00:31, 5.32MB/s]Download file pytorch_model.bin:  33%|███▎      | 76.7M/231M [00:16<00:30, 5.33MB/s]Download file pytorch_model.bin:  35%|███▌      | 81.8M/231M [00:17<00:29, 5.33MB/s]Download file pytorch_model.bin:  38%|███▊      | 86.9M/231M [00:18<00:28, 5.33MB/s]Download file pytorch_model.bin:  40%|███▉      | 92.0M/231M [00:19<00:27, 5.35MB/s]Download file pytorch_model.bin:  42%|████▏     | 97.2M/231M [00:20<00:26, 5.36MB/s]Download file pytorch_model.bin:  44%|████▍     | 102M/231M [00:21<00:25, 5.38MB/s] Download file pytorch_model.bin:  47%|████▋     | 108M/231M [00:22<00:24, 5.38MB/s]Download file pytorch_model.bin:  49%|████▉     | 113M/231M [00:23<00:23, 5.37MB/s]Download file pytorch_model.bin:  51%|█████     | 118M/231M [00:24<00:22, 5.37MB/s]Download file pytorch_model.bin:  53%|█████▎    | 123M/231M [00:25<00:21, 5.36MB/s]Download file pytorch_model.bin:  55%|█████▌    | 128M/231M [00:26<00:20, 5.38MB/s]Download file pytorch_model.bin:  58%|█████▊    | 133M/231M [00:27<00:18, 5.40MB/s]Download file pytorch_model.bin:  60%|█████▉    | 138M/231M [00:28<00:18, 5.38MB/s]Download file pytorch_model.bin:  62%|██████▏   | 143M/231M [00:29<00:17, 5.27MB/s]Download file pytorch_model.bin:  64%|██████▍   | 147M/231M [00:30<00:17, 5.04MB/s]Download file pytorch_model.bin:  66%|██████▌   | 152M/231M [00:31<00:16, 5.04MB/s]Download file pytorch_model.bin:  68%|██████▊   | 157M/231M [00:32<00:14, 5.14MB/s]Download file pytorch_model.bin:  70%|███████   | 162M/231M [00:33<00:13, 5.20MB/s]Download file pytorch_model.bin:  73%|███████▎  | 168M/231M [00:34<00:12, 5.26MB/s]Download file pytorch_model.bin:  75%|███████▍  | 173M/231M [00:35<00:11, 5.29MB/s]Download file pytorch_model.bin:  77%|███████▋  | 178M/231M [00:36<00:10, 5.33MB/s]Download file pytorch_model.bin:  79%|███████▉  | 183M/231M [00:37<00:09, 5.31MB/s]Download file pytorch_model.bin:  81%|████████▏ | 188M/231M [00:38<00:08, 5.33MB/s]Download file pytorch_model.bin:  84%|████████▎ | 193M/231M [00:39<00:07, 5.35MB/s]Download file pytorch_model.bin:  86%|████████▌ | 198M/231M [00:40<00:06, 5.34MB/s]Download file pytorch_model.bin:  88%|████████▊ | 203M/231M [00:41<00:05, 5.35MB/s]Download file pytorch_model.bin:  90%|█████████ | 209M/231M [00:42<00:04, 5.34MB/s]Download file pytorch_model.bin:  93%|█████████▎| 214M/231M [00:43<00:03, 5.37MB/s]Download file pytorch_model.bin:  95%|█████████▍| 219M/231M [00:44<00:02, 5.39MB/s]Download file pytorch_model.bin:  97%|█████████▋| 224M/231M [00:45<00:01, 5.38MB/s]Download file pytorch_model.bin:  99%|█████████▉| 229M/231M [00:46<00:00, 5.39MB/s]
+Clean file spiece.model:   0%|          | 1.00k/773k [00:00<?, ?B/s][A[ADownload file pytorch_model.bin:   0%|          | 4.25M/850M [00:02<05:55, 2.50MB/s]Download file pytorch_model.bin:   1%|          | 9.34M/850M [00:03<03:52, 3.79MB/s]Download file pytorch_model.bin:   2%|▏         | 14.4M/850M [00:04<03:19, 4.40MB/s]Download file pytorch_model.bin:   2%|▏         | 19.4M/850M [00:05<03:05, 4.70MB/s]Download file pytorch_model.bin:   3%|▎         | 24.4M/850M [00:06<02:57, 4.88MB/s]Download file pytorch_model.bin:   3%|▎         | 29.6M/850M [00:07<02:50, 5.04MB/s]Download file pytorch_model.bin:   4%|▍         | 34.7M/850M [00:08<02:45, 5.15MB/s]Download file pytorch_model.bin:   5%|▍         | 39.7M/850M [00:09<02:44, 5.17MB/s]Download file pytorch_model.bin:   5%|▌         | 44.7M/850M [00:10<02:43, 5.18MB/s]Download file pytorch_model.bin:   6%|▌         | 49.7M/850M [00:11<02:41, 5.20MB/s]Download file pytorch_model.bin:   6%|▋         | 54.7M/850M [00:12<02:39, 5.22MB/s]Download file pytorch_model.bin:   7%|▋         | 59.7M/850M [00:13<02:38, 5.23MB/s]Download file pytorch_model.bin:   8%|▊         | 64.8M/850M [00:14<02:36, 5.25MB/s]Download file pytorch_model.bin:   8%|▊         | 69.7M/850M [00:15<02:36, 5.24MB/s]Download file pytorch_model.bin:   9%|▉         | 74.7M/850M [00:16<02:35, 5.22MB/s]Download file pytorch_model.bin:   9%|▉         | 79.6M/850M [00:17<02:35, 5.20MB/s]Download file pytorch_model.bin:  10%|▉         | 84.5M/850M [00:18<02:35, 5.17MB/s]Download file pytorch_model.bin:  11%|█         | 89.4M/850M [00:19<02:34, 5.15MB/s]
+Download file spiece.model: 100%|██████████| 773k/773k [00:20<00:00, 229kB/s][ADownload file pytorch_model.bin:  11%|█         | 94.2M/850M [00:20<02:34, 5.13MB/s]Download file pytorch_model.bin:  12%|█▏        | 99.0M/850M [00:21<02:34, 5.10MB/s]Download file pytorch_model.bin:  12%|█▏        | 104M/850M [00:22<02:33, 5.09MB/s] Download file pytorch_model.bin:  13%|█▎        | 109M/850M [00:23<02:30, 5.16MB/s]Download file pytorch_model.bin:  13%|█▎        | 114M/850M [00:24<02:28, 5.19MB/s]Download file pytorch_model.bin:  14%|█▍        | 119M/850M [00:25<02:28, 5.17MB/s]Download file pytorch_model.bin:  15%|█▍        | 124M/850M [00:26<02:27, 5.18MB/s]Download file pytorch_model.bin:  15%|█▌        | 129M/850M [00:27<02:26, 5.17MB/s]Download file pytorch_model.bin:  16%|█▌        | 134M/850M [00:28<02:24, 5.22MB/s]Download file pytorch_model.bin:  16%|█▋        | 139M/850M [00:29<02:20, 5.29MB/s]Download file pytorch_model.bin:  17%|█▋        | 144M/850M [00:30<02:18, 5.33MB/s]Download file pytorch_model.bin:  18%|█▊        | 149M/850M [00:31<02:21, 5.19MB/s]Download file pytorch_model.bin:  18%|█▊        | 154M/850M [00:32<02:21, 5.17MB/s]Download file pytorch_model.bin:  19%|█▊        | 159M/850M [00:33<02:20, 5.16MB/s]Download file pytorch_model.bin:  19%|█▉        | 164M/850M [00:34<02:19, 5.16MB/s]Download file pytorch_model.bin:  20%|█▉        | 169M/850M [00:35<02:17, 5.19MB/s]Download file pytorch_model.bin:  20%|██        | 174M/850M [00:36<02:15, 5.25MB/s]Download file pytorch_model.bin:  21%|██        | 179M/850M [00:37<02:13, 5.27MB/s]Download file pytorch_model.bin:  22%|██▏       | 184M/850M [00:38<02:13, 5.22MB/s]Download file pytorch_model.bin:  22%|██▏       | 189M/850M [00:39<02:12, 5.23MB/s]Download file pytorch_model.bin:  23%|██▎       | 194M/850M [00:40<02:11, 5.24MB/s]Download file pytorch_model.bin:  23%|██▎       | 199M/850M [00:41<02:10, 5.24MB/s]Download file pytorch_model.bin:  24%|██▍       | 204M/850M [00:42<02:10, 5.20MB/s]Download file pytorch_model.bin:  25%|██▍       | 209M/850M [00:43<02:09, 5.21MB/s]Download file pytorch_model.bin:  25%|██▌       | 214M/850M [00:44<02:07, 5.23MB/s]Download file pytorch_model.bin:  26%|██▌       | 219M/850M [00:45<02:06, 5.22MB/s]Download file pytorch_model.bin:  26%|██▋       | 224M/850M [00:46<02:05, 5.22MB/s]Download file pytorch_model.bin:  27%|██▋       | 229M/850M [00:47<02:04, 5.24MB/s]Download file pytorch_model.bin:  27%|██▋       | 234M/850M [00:48<02:03, 5.23MB/s]Download file pytorch_model.bin:  28%|██▊       | 239M/850M [00:49<02:01, 5.27MB/s]Download file pytorch_model.bin:  29%|██▊       | 244M/850M [00:50<02:01, 5.23MB/s]Download file pytorch_model.bin:  29%|██▉       | 248M/850M [00:51<02:02, 5.16MB/s]Download file pytorch_model.bin:  30%|██▉       | 253M/850M [00:52<02:02, 5.10MB/s]Download file pytorch_model.bin:  30%|███       | 258M/850M [00:53<02:02, 5.06MB/s]Download file pytorch_model.bin:  31%|███       | 263M/850M [00:54<02:02, 5.03MB/s]Download file pytorch_model.bin:  31%|███▏      | 267M/850M [00:55<02:01, 5.03MB/s]Download file pytorch_model.bin:  32%|███▏      | 272M/850M [00:56<02:01, 4.98MB/s]Download file pytorch_model.bin:  33%|███▎      | 277M/850M [00:57<02:02, 4.89MB/s]Download file pytorch_model.bin:  33%|███▎      | 281M/850M [00:58<02:00, 4.95MB/s]Download file pytorch_model.bin:  34%|███▎      | 286M/850M [00:59<01:58, 4.97MB/s]Download file pytorch_model.bin:  34%|███▍      | 291M/850M [01:00<01:57, 5.00MB/s]Download file pytorch_model.bin:  35%|███▍      | 296M/850M [01:01<01:56, 5.00MB/s]Download file pytorch_model.bin:  35%|███▌      | 300M/850M [01:02<01:56, 4.94MB/s]Download file pytorch_model.bin:  36%|███▌      | 305M/850M [01:03<01:54, 5.00MB/s]Download file pytorch_model.bin:  36%|███▋      | 310M/850M [01:04<01:52, 5.04MB/s]Download file pytorch_model.bin:  37%|███▋      | 315M/850M [01:05<01:48, 5.15MB/s]Download file pytorch_model.bin:  38%|███▊      | 321M/850M [01:06<01:46, 5.21MB/s]Download file pytorch_model.bin:  38%|███▊      | 325M/850M [01:07<01:46, 5.18MB/s]Download file pytorch_model.bin:  39%|███▉      | 330M/850M [01:08<01:44, 5.21MB/s]Download file pytorch_model.bin:  39%|███▉      | 335M/850M [01:09<01:43, 5.20MB/s]Download file pytorch_model.bin:  40%|████      | 341M/850M [01:10<01:41, 5.24MB/s]Download file pytorch_model.bin:  41%|████      | 346M/850M [01:11<01:40, 5.27MB/s]Download file pytorch_model.bin:  41%|████      | 351M/850M [01:12<01:39, 5.27MB/s]Download file pytorch_model.bin:  42%|████▏     | 356M/850M [01:13<01:38, 5.27MB/s]Download file pytorch_model.bin:  42%|████▏     | 361M/850M [01:14<01:36, 5.32MB/s]Download file pytorch_model.bin:  43%|████▎     | 366M/850M [01:15<01:35, 5.33MB/s]Download file pytorch_model.bin:  44%|████▎     | 371M/850M [01:16<01:35, 5.27MB/s]Download file pytorch_model.bin:  44%|████▍     | 376M/850M [01:17<01:34, 5.28MB/s]Download file pytorch_model.bin:  45%|████▍     | 381M/850M [01:18<01:34, 5.22MB/s]Download file pytorch_model.bin:  45%|████▌     | 386M/850M [01:19<01:32, 5.25MB/s]Download file pytorch_model.bin:  46%|████▌     | 391M/850M [01:20<01:31, 5.29MB/s]Download file pytorch_model.bin:  47%|████▋     | 396M/850M [01:21<01:29, 5.31MB/s]Download file pytorch_model.bin:  47%|████▋     | 401M/850M [01:22<01:31, 5.14MB/s]Download file pytorch_model.bin:  48%|████▊     | 406M/850M [01:23<01:30, 5.18MB/s]Download file pytorch_model.bin:  48%|████▊     | 411M/850M [01:24<01:28, 5.22MB/s]Download file pytorch_model.bin:  49%|████▉     | 416M/850M [01:25<01:27, 5.18MB/s]Download file pytorch_model.bin:  49%|████▉     | 421M/850M [01:26<01:26, 5.23MB/s]Download file pytorch_model.bin:  50%|█████     | 426M/850M [01:27<01:25, 5.23MB/s]Download file pytorch_model.bin:  51%|█████     | 431M/850M [01:28<01:23, 5.26MB/s]Download file pytorch_model.bin:  51%|█████     | 436M/850M [01:29<01:23, 5.23MB/s]Download file pytorch_model.bin:  52%|█████▏    | 440M/850M [01:30<01:26, 5.00MB/s]Download file pytorch_model.bin:  52%|█████▏    | 444M/850M [01:31<01:27, 4.86MB/s]Download file pytorch_model.bin:  53%|█████▎    | 449M/850M [01:32<01:25, 4.92MB/s]Download file pytorch_model.bin:  53%|█████▎    | 454M/850M [01:33<01:22, 5.04MB/s]Download file pytorch_model.bin:  54%|█████▍    | 459M/850M [01:34<01:19, 5.14MB/s]Download file pytorch_model.bin:  55%|█████▍    | 464M/850M [01:35<01:18, 5.19MB/s]Download file pytorch_model.bin:  55%|█████▌    | 470M/850M [01:36<01:16, 5.24MB/s]Download file pytorch_model.bin:  56%|█████▌    | 475M/850M [01:37<01:14, 5.26MB/s]Download file pytorch_model.bin:  56%|█████▋    | 479M/850M [01:38<01:18, 4.96MB/s]Download file pytorch_model.bin:  57%|█████▋    | 483M/850M [01:39<01:21, 4.71MB/s]Download file pytorch_model.bin:  57%|█████▋    | 487M/850M [01:40<01:22, 4.63MB/s]Download file pytorch_model.bin:  58%|█████▊    | 492M/850M [01:41<01:19, 4.73MB/s]Download file pytorch_model.bin:  58%|█████▊    | 496M/850M [01:42<01:17, 4.76MB/s]Download file pytorch_model.bin:  59%|█████▉    | 501M/850M [01:43<01:14, 4.91MB/s]Download file pytorch_model.bin:  60%|█████▉    | 506M/850M [01:44<01:11, 5.05MB/s]Download file pytorch_model.bin:  60%|██████    | 511M/850M [01:45<01:13, 4.87MB/s]Download file pytorch_model.bin:  61%|██████    | 515M/850M [01:46<01:15, 4.68MB/s]Download file pytorch_model.bin:  61%|██████    | 519M/850M [01:47<01:14, 4.65MB/s]Download file pytorch_model.bin:  62%|██████▏   | 524M/850M [01:48<01:11, 4.77MB/s]Download file pytorch_model.bin:  62%|██████▏   | 528M/850M [01:49<01:12, 4.67MB/s]Download file pytorch_model.bin:  63%|██████▎   | 532M/850M [01:50<01:13, 4.51MB/s]Download file pytorch_model.bin:  63%|██████▎   | 536M/850M [01:51<01:13, 4.47MB/s]Download file pytorch_model.bin:  64%|██████▎   | 542M/850M [01:52<01:07, 4.77MB/s]Download file pytorch_model.bin:  64%|██████▍   | 547M/850M [01:53<01:04, 4.96MB/s]Download file pytorch_model.bin:  65%|██████▍   | 552M/850M [01:54<01:02, 5.02MB/s]Download file pytorch_model.bin:  65%|██████▌   | 557M/850M [01:55<01:00, 5.07MB/s]Download file pytorch_model.bin:  66%|██████▌   | 561M/850M [01:56<00:59, 5.10MB/s]Download file pytorch_model.bin:  67%|██████▋   | 566M/850M [01:57<00:57, 5.14MB/s]Download file pytorch_model.bin:  67%|██████▋   | 571M/850M [01:58<00:56, 5.14MB/s]Download file pytorch_model.bin:  68%|██████▊   | 576M/850M [01:59<00:55, 5.16MB/s]Download file pytorch_model.bin:  68%|██████▊   | 581M/850M [02:00<00:54, 5.16MB/s]Download file pytorch_model.bin:  69%|██████▉   | 586M/850M [02:01<00:53, 5.16MB/s]Download file pytorch_model.bin:  70%|██████▉   | 591M/850M [02:02<00:52, 5.18MB/s]Download file pytorch_model.bin:  70%|███████   | 596M/850M [02:03<00:51, 5.18MB/s]Download file pytorch_model.bin:  71%|███████   | 601M/850M [02:04<00:50, 5.20MB/s]Download file pytorch_model.bin:  71%|███████   | 606M/850M [02:05<00:50, 5.06MB/s]Download file pytorch_model.bin:  72%|███████▏  | 610M/850M [02:06<00:50, 4.99MB/s]Download file pytorch_model.bin:  72%|███████▏  | 615M/850M [02:07<00:48, 5.09MB/s]Download file pytorch_model.bin:  73%|███████▎  | 620M/850M [02:08<00:46, 5.15MB/s]Download file pytorch_model.bin:  74%|███████▎  | 626M/850M [02:09<00:45, 5.20MB/s]Download file pytorch_model.bin:  74%|███████▍  | 631M/850M [02:10<00:44, 5.22MB/s]Download file pytorch_model.bin:  75%|███████▍  | 636M/850M [02:11<00:43, 5.22MB/s]Download file pytorch_model.bin:  75%|███████▌  | 640M/850M [02:12<00:42, 5.18MB/s]Download file pytorch_model.bin:  76%|███████▌  | 644M/850M [02:13<00:44, 4.81MB/s]Download file pytorch_model.bin:  76%|███████▌  | 648M/850M [02:14<00:46, 4.55MB/s]Download file pytorch_model.bin:  77%|███████▋  | 652M/850M [02:15<00:46, 4.48MB/s]Download file pytorch_model.bin:  77%|███████▋  | 656M/850M [02:16<00:45, 4.43MB/s]Download file pytorch_model.bin:  78%|███████▊  | 660M/850M [02:17<00:45, 4.39MB/s]Download file pytorch_model.bin:  78%|███████▊  | 664M/850M [02:18<00:45, 4.31MB/s]Download file pytorch_model.bin:  79%|███████▊  | 668M/850M [02:19<00:45, 4.21MB/s]Download file pytorch_model.bin:  79%|███████▉  | 673M/850M [02:20<00:42, 4.40MB/s]Download file pytorch_model.bin:  80%|███████▉  | 677M/850M [02:21<00:40, 4.49MB/s]Download file pytorch_model.bin:  80%|████████  | 681M/850M [02:22<00:39, 4.45MB/s]Download file pytorch_model.bin:  81%|████████  | 686M/850M [02:23<00:37, 4.54MB/s]Download file pytorch_model.bin:  81%|████████  | 691M/850M [02:24<00:35, 4.75MB/s]Download file pytorch_model.bin:  82%|████████▏ | 696M/850M [02:25<00:33, 4.87MB/s]Download file pytorch_model.bin:  82%|████████▏ | 701M/850M [02:26<00:31, 5.00MB/s]Download file pytorch_model.bin:  83%|████████▎ | 706M/850M [02:27<00:30, 5.02MB/s]Download file pytorch_model.bin:  84%|████████▎ | 710M/850M [02:28<00:29, 5.00MB/s]Download file pytorch_model.bin:  84%|████████▍ | 715M/850M [02:29<00:28, 5.00MB/s]Download file pytorch_model.bin:  85%|████████▍ | 720M/850M [02:30<00:27, 4.99MB/s]Download file pytorch_model.bin:  85%|████████▌ | 724M/850M [02:31<00:27, 4.73MB/s]Download file pytorch_model.bin:  86%|████████▌ | 728M/850M [02:32<00:28, 4.51MB/s]Download file pytorch_model.bin:  86%|████████▌ | 732M/850M [02:33<00:27, 4.54MB/s]Download file pytorch_model.bin:  87%|████████▋ | 737M/850M [02:34<00:25, 4.70MB/s]Download file pytorch_model.bin:  87%|████████▋ | 742M/850M [02:35<00:23, 4.78MB/s]Download file pytorch_model.bin:  88%|████████▊ | 746M/850M [02:36<00:22, 4.84MB/s]Download file pytorch_model.bin:  88%|████████▊ | 752M/850M [02:37<00:20, 4.97MB/s]Download file pytorch_model.bin:  89%|████████▉ | 757M/850M [02:38<00:19, 5.07MB/s]Download file pytorch_model.bin:  90%|████████▉ | 762M/850M [02:39<00:18, 5.12MB/s]Download file pytorch_model.bin:  90%|█████████ | 767M/850M [02:40<00:16, 5.22MB/s]Download file pytorch_model.bin:  91%|█████████ | 772M/850M [02:41<00:15, 5.28MB/s]Download file pytorch_model.bin:  91%|█████████▏| 777M/850M [02:42<00:14, 5.27MB/s]Download file pytorch_model.bin:  92%|█████████▏| 782M/850M [02:43<00:13, 5.23MB/s]Download file pytorch_model.bin:  93%|█████████▎| 787M/850M [02:44<00:12, 5.26MB/s]Download file pytorch_model.bin:  93%|█████████▎| 792M/850M [02:45<00:11, 5.24MB/s]Download file pytorch_model.bin:  94%|█████████▎| 797M/850M [02:46<00:10, 5.24MB/s]Download file pytorch_model.bin:  94%|█████████▍| 802M/850M [02:47<00:09, 5.28MB/s]Download file pytorch_model.bin:  95%|█████████▍| 807M/850M [02:48<00:08, 5.24MB/s]Download file pytorch_model.bin:  95%|█████████▌| 812M/850M [02:49<00:07, 5.22MB/s]Download file pytorch_model.bin:  96%|█████████▌| 816M/850M [02:50<00:07, 5.06MB/s]Download file pytorch_model.bin:  97%|█████████▋| 821M/850M [02:51<00:05, 5.12MB/s]Download file pytorch_model.bin:  97%|█████████▋| 826M/850M [02:52<00:04, 5.15MB/s]Download file pytorch_model.bin:  98%|█████████▊| 832M/850M [02:53<00:03, 5.22MB/s]Download file pytorch_model.bin:  98%|█████████▊| 837M/850M [02:54<00:02, 5.24MB/s]Download file pytorch_model.bin:  99%|█████████▉| 842M/850M [02:55<00:01, 5.22MB/s]Download file pytorch_model.bin: 100%|█████████▉| 847M/850M [02:56<00:00, 5.28MB/s]
 
 
-Clean file pytorch_model.bin:   0%|          | 1.00k/231M [00:00<?, ?B/s][A[A[A
+Clean file pytorch_model.bin:   0%|          | 1.00k/850M [00:00<?, ?B/s][A[A[A
 
 
-Clean file pytorch_model.bin:   0%|          | 769k/231M [00:01<05:07, 786kB/s][A[A[A
+Clean file pytorch_model.bin:   0%|          | 1.50M/850M [00:01<09:26, 1.57MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   3%|▎         | 5.84M/231M [00:02<01:08, 3.46MB/s][A[A[A
+Clean file pytorch_model.bin:   1%|          | 6.53M/850M [00:02<03:56, 3.75MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   5%|▍         | 10.9M/231M [00:03<00:53, 4.32MB/s][A[A[A
+Clean file pytorch_model.bin:   1%|▏         | 11.6M/850M [00:03<03:17, 4.46MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   7%|▋         | 16.1M/231M [00:04<00:47, 4.73MB/s][A[A[A
+Clean file pytorch_model.bin:   2%|▏         | 16.5M/850M [00:04<03:05, 4.71MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   9%|▉         | 21.2M/231M [00:05<00:44, 4.96MB/s][A[A[A
+Clean file pytorch_model.bin:   3%|▎         | 21.5M/850M [00:05<02:56, 4.91MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 850M/850M [03:10<00:00, 5.28MB/s]
 
 
-Clean file pytorch_model.bin:  11%|█▏        | 26.3M/231M [00:06<00:41, 5.11MB/s][A[A[A
+Clean file pytorch_model.bin:   3%|▎         | 26.5M/850M [00:06<02:51, 5.03MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  14%|█▎        | 31.5M/231M [00:07<00:40, 5.19MB/s][A[A[A
+Clean file pytorch_model.bin:   4%|▎         | 31.5M/850M [00:07<02:49, 5.08MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  16%|█▌        | 36.6M/231M [00:08<00:38, 5.25MB/s][A[A[A
+Clean file pytorch_model.bin:   4%|▍         | 36.5M/850M [00:08<02:46, 5.13MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  18%|█▊        | 41.7M/231M [00:09<00:37, 5.28MB/s][A[A[A
+Clean file pytorch_model.bin:   5%|▍         | 41.5M/850M [00:09<02:44, 5.16MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  20%|██        | 46.9M/231M [00:10<00:36, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:   5%|▌         | 46.5M/850M [00:10<02:41, 5.20MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  23%|██▎       | 52.0M/231M [00:11<00:35, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:   6%|▌         | 51.6M/850M [00:11<02:40, 5.22MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  25%|██▍       | 57.1M/231M [00:12<00:34, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:   7%|▋         | 56.6M/850M [00:12<02:38, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  27%|██▋       | 62.3M/231M [00:13<00:33, 5.35MB/s][A[A[A
+Clean file pytorch_model.bin:   7%|▋         | 61.6M/850M [00:13<02:37, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  29%|██▉       | 67.3M/231M [00:14<00:32, 5.35MB/s][A[A[A
+Clean file pytorch_model.bin:   8%|▊         | 66.5M/850M [00:14<02:38, 5.19MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  31%|███▏      | 72.4M/231M [00:15<00:31, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:   8%|▊         | 71.5M/850M [00:15<02:36, 5.21MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  34%|███▎      | 77.6M/231M [00:16<00:29, 5.36MB/s][A[A[A
+Clean file pytorch_model.bin:   9%|▉         | 76.6M/850M [00:16<02:34, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  36%|███▌      | 82.8M/231M [00:17<00:28, 5.37MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 231M/231M [01:04<00:00, 5.39MB/s]
+Clean file pytorch_model.bin:  10%|▉         | 81.6M/850M [00:17<02:33, 5.26MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  38%|███▊      | 87.9M/231M [00:18<00:27, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  10%|█         | 86.7M/850M [00:18<02:32, 5.26MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  40%|████      | 93.0M/231M [00:19<00:26, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  11%|█         | 91.7M/850M [00:19<02:31, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  43%|████▎     | 98.2M/231M [00:20<00:25, 5.39MB/s][A[A[A
+Clean file pytorch_model.bin:  11%|█▏        | 96.6M/850M [00:20<02:30, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  45%|████▍     | 103M/231M [00:21<00:24, 5.38MB/s] [A[A[A
+Clean file pytorch_model.bin:  12%|█▏        | 102M/850M [00:21<02:29, 5.24MB/s] [A[A[A
 
 
-Clean file pytorch_model.bin:  47%|████▋     | 108M/231M [00:22<00:23, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  13%|█▎        | 107M/850M [00:22<02:29, 5.22MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  49%|████▉     | 114M/231M [00:23<00:22, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  13%|█▎        | 112M/850M [00:23<02:28, 5.23MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  51%|█████▏    | 119M/231M [00:24<00:21, 5.36MB/s][A[A[A
+Clean file pytorch_model.bin:  14%|█▎        | 117M/850M [00:24<02:26, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  53%|█████▎    | 123M/231M [00:25<00:21, 5.19MB/s][A[A[A
+Clean file pytorch_model.bin:  14%|█▍        | 122M/850M [00:25<02:25, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  56%|█████▌    | 128M/231M [00:26<00:20, 5.25MB/s][A[A[A
+Clean file pytorch_model.bin:  15%|█▍        | 127M/850M [00:26<02:24, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  58%|█████▊    | 133M/231M [00:27<00:19, 5.21MB/s][A[A[A
+Clean file pytorch_model.bin:  15%|█▌        | 132M/850M [00:27<02:23, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  60%|█████▉    | 138M/231M [00:28<00:18, 5.15MB/s][A[A[A
+Clean file pytorch_model.bin:  16%|█▌        | 137M/850M [00:28<02:22, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  62%|██████▏   | 143M/231M [00:29<00:17, 5.22MB/s][A[A[A
+Clean file pytorch_model.bin:  17%|█▋        | 142M/850M [00:29<02:21, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  64%|██████▍   | 148M/231M [00:30<00:17, 5.08MB/s][A[A[A
+Clean file pytorch_model.bin:  17%|█▋        | 147M/850M [00:30<02:20, 5.24MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  66%|██████▌   | 152M/231M [00:31<00:17, 4.84MB/s][A[A[A
+Clean file pytorch_model.bin:  18%|█▊        | 151M/850M [00:31<02:24, 5.07MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  68%|██████▊   | 156M/231M [00:32<00:16, 4.74MB/s][A[A[A
+Clean file pytorch_model.bin:  18%|█▊        | 156M/850M [00:32<02:21, 5.14MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  70%|██████▉   | 161M/231M [00:33<00:14, 4.94MB/s][A[A[A
+Clean file pytorch_model.bin:  19%|█▉        | 161M/850M [00:33<02:25, 4.97MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  72%|███████▏  | 166M/231M [00:34<00:13, 5.06MB/s][A[A[A
+Clean file pytorch_model.bin:  19%|█▉        | 165M/850M [00:34<02:29, 4.81MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  74%|███████▍  | 172M/231M [00:35<00:12, 5.16MB/s][A[A[A
+Clean file pytorch_model.bin:  20%|█▉        | 170M/850M [00:35<02:25, 4.92MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  77%|███████▋  | 177M/231M [00:36<00:10, 5.23MB/s][A[A[A
+Clean file pytorch_model.bin:  21%|██        | 175M/850M [00:36<02:20, 5.02MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  79%|███████▉  | 182M/231M [00:37<00:09, 5.27MB/s][A[A[A
+Clean file pytorch_model.bin:  21%|██        | 180M/850M [00:37<02:18, 5.09MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  81%|████████  | 187M/231M [00:38<00:08, 5.31MB/s][A[A[A
+Clean file pytorch_model.bin:  22%|██▏       | 185M/850M [00:38<02:16, 5.13MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  83%|████████▎ | 192M/231M [00:39<00:07, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:  22%|██▏       | 190M/850M [00:39<02:13, 5.18MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  85%|████████▌ | 197M/231M [00:40<00:06, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:  23%|██▎       | 195M/850M [00:40<02:12, 5.19MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  88%|████████▊ | 202M/231M [00:41<00:05, 5.35MB/s][A[A[A
+Clean file pytorch_model.bin:  23%|██▎       | 199M/850M [00:41<02:19, 4.91MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  90%|████████▉ | 208M/231M [00:42<00:04, 5.38MB/s][A[A[A
+Clean file pytorch_model.bin:  24%|██▍       | 203M/850M [00:42<02:23, 4.72MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  92%|█████████▏| 213M/231M [00:43<00:03, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  24%|██▍       | 207M/850M [00:43<02:27, 4.58MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  94%|█████████▍| 218M/231M [00:44<00:02, 5.36MB/s][A[A[A
+Clean file pytorch_model.bin:  25%|██▍       | 211M/850M [00:44<02:29, 4.48MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  97%|█████████▋| 223M/231M [00:45<00:01, 5.36MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 231M/231M [01:33<00:00, 290kB/s] Download file pytorch_model.bin: 100%|██████████| 231M/231M [01:33<00:00, 290kB/s]Download file pytorch_model.bin: 100%|██████████| 231M/231M [01:33<00:00, 2.60MB/s]
+Clean file pytorch_model.bin:  25%|██▌       | 215M/850M [00:45<02:31, 4.40MB/s][A[A[A
 
-Download file spiece.model: 100%|██████████| 773k/773k [01:33<00:00, 8.15kB/s][A
-Download file spiece.model: 100%|██████████| 773k/773k [01:33<00:00, 8.15kB/s][ADownload file spiece.model: 100%|██████████| 773k/773k [01:33<00:00, 8.15kB/s]
 
+Clean file pytorch_model.bin:  26%|██▌       | 220M/850M [00:46<02:22, 4.65MB/s][A[A[A
 
-Clean file spiece.model: 100%|██████████| 773k/773k [01:32<00:00, 8.58kB/s][A[A
 
-Clean file spiece.model: 100%|██████████| 773k/773k [01:32<00:00, 8.58kB/s][A[AClean file spiece.model: 100%|██████████| 773k/773k [01:32<00:00, 8.58kB/s]
+Clean file pytorch_model.bin:  26%|██▋       | 225M/850M [00:47<02:15, 4.83MB/s][A[A[A
 
 
+Clean file pytorch_model.bin:  27%|██▋       | 230M/850M [00:48<02:11, 4.95MB/s][A[A[A
 
-Clean file pytorch_model.bin: 100%|██████████| 231M/231M [00:46<00:00, 6.23MB/s][A[A[A
 
+Clean file pytorch_model.bin:  28%|██▊       | 235M/850M [00:49<02:07, 5.04MB/s][A[A[A
 
-Clean file pytorch_model.bin: 100%|██████████| 231M/231M [00:46<00:00, 6.23MB/s][A[A[AClean file pytorch_model.bin: 100%|██████████| 231M/231M [00:46<00:00, 5.25MB/s]
-2023-12-16 01:18:09 INFO     creating t5-small-newsqa-qag-finetuned/eval
-2023-12-16 01:18:09 INFO     copying small_finetuned_ckpt/best_model/eval/samples.test.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-small-newsqa-qag-finetuned/eval
-2023-12-16 01:18:09 INFO     copying small_finetuned_ckpt/best_model/eval/samples.validation.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-small-newsqa-qag-finetuned/eval
-2023-12-16 01:18:10 INFO     copying small_finetuned_ckpt/best_model/eval/metric.first.answer.paragraph.questions_answers.StellarMilk_newsqa.default.json -> t5-small-newsqa-qag-finetuned/eval
-To https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned
-   acbafbf..ec53857  main -> main
 
-2023-12-16 01:18:11 WARNING  To https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned
-   acbafbf..ec53857  main -> main
+Clean file pytorch_model.bin:  28%|██▊       | 240M/850M [00:50<02:05, 5.11MB/s][A[A[A
 
-2023-12-16 01:18:18 INFO     Upload small_trained_ckpt/best_model to StellarMilk/t5-small-newsqa-qag-trained
-2023-12-16 01:18:19 INFO     use spaCy answer extraction model: positionrank
-2023-12-16 01:18:21 INFO     Model `small_trained_ckpt/best_model`
-2023-12-16 01:18:21 INFO     	 * Num of GPU in use: 1
-2023-12-16 01:18:21 INFO     	 * Prefix: True
-2023-12-16 01:18:21 INFO     	 * Language: en (ignore at the training phase)
-pytorch_model.bin:   0%|          | 0.00/242M [00:00<?, ?B/s]pytorch_model.bin:   2%|▏         | 5.52M/242M [00:00<00:06, 37.5MB/s]pytorch_model.bin:   7%|▋         | 16.0M/242M [00:00<00:10, 21.5MB/s]pytorch_model.bin:  11%|█▏        | 27.4M/242M [00:01<00:08, 24.7MB/s]pytorch_model.bin:  13%|█▎        | 31.2M/242M [00:01<00:08, 25.9MB/s]pytorch_model.bin:  14%|█▍        | 34.2M/242M [00:01<00:13, 15.7MB/s]pytorch_model.bin:  18%|█▊        | 43.1M/242M [00:02<00:11, 17.3MB/s]pytorch_model.bin:  19%|█▉        | 46.9M/242M [00:02<00:10, 19.2MB/s]pytorch_model.bin:  20%|██        | 49.4M/242M [00:02<00:14, 12.9MB/s]pytorch_model.bin:  26%|██▋       | 64.0M/242M [00:03<00:08, 19.9MB/s]pytorch_model.bin:  33%|███▎      | 80.0M/242M [00:03<00:07, 22.0MB/s]pytorch_model.bin:  40%|███▉      | 96.0M/242M [00:04<00:05, 26.4MB/s]pytorch_model.bin:  46%|████▋     | 112M/242M [00:05<00:05, 25.1MB/s] pytorch_model.bin:  53%|█████▎    | 128M/242M [00:05<00:03, 28.6MB/s]pytorch_model.bin:  60%|█████▉    | 144M/242M [00:05<00:03, 30.2MB/s]pytorch_model.bin:  64%|██████▍   | 155M/242M [00:06<00:02, 29.4MB/s]pytorch_model.bin:  65%|██████▌   | 158M/242M [00:06<00:02, 28.5MB/s]pytorch_model.bin:  66%|██████▋   | 161M/242M [00:09<00:11, 7.26MB/s]pytorch_model.bin:  68%|██████▊   | 164M/242M [00:09<00:09, 7.94MB/s]pytorch_model.bin:  70%|███████   | 170M/242M [00:10<00:08, 8.84MB/s]pytorch_model.bin:  71%|███████   | 172M/242M [00:10<00:07, 9.43MB/s]pytorch_model.bin:  73%|███████▎  | 176M/242M [00:10<00:07, 8.29MB/s]pytorch_model.bin:  79%|███████▉  | 192M/242M [00:11<00:03, 16.2MB/s]pytorch_model.bin:  84%|████████▍ | 204M/242M [00:11<00:01, 20.4MB/s]pytorch_model.bin:  86%|████████▌ | 207M/242M [00:11<00:01, 21.2MB/s]pytorch_model.bin:  87%|████████▋ | 210M/242M [00:12<00:02, 14.8MB/s]pytorch_model.bin:  93%|█████████▎| 224M/242M [00:12<00:00, 22.8MB/s]pytorch_model.bin:  99%|█████████▉| 240M/242M [00:12<00:00, 30.0MB/s]pytorch_model.bin: 100%|██████████| 242M/242M [00:12<00:00, 18.8MB/s]
-spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]spiece.model: 100%|██████████| 792k/792k [00:00<00:00, 3.27MB/s]
-/home2/g.torresgamez/.local/lib/python3.10/site-packages/huggingface_hub/utils/_deprecation.py:127: FutureWarning: 'Repository' (from 'huggingface_hub.repository') is deprecated and will be removed from version '1.0'. Please prefer the http-based alternatives instead. Given its large adoption in legacy code, the complete removal is only planned on next major release.
-For more details, please read https://huggingface.co/docs/huggingface_hub/concepts/git_vs_http.
-  warnings.warn(warning_message, FutureWarning)
-Cloning https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained into local empty directory.
-2023-12-16 01:18:38 WARNING  Cloning https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained into local empty directory.
-Download file pytorch_model.bin:   0%|          | 8.00k/231M [00:00<?, ?B/s]
-Download file spiece.model:   1%|          | 8.74k/773k [00:00<?, ?B/s][A
 
-Clean file spiece.model:   0%|          | 1.00k/773k [00:00<?, ?B/s][A[A
+Clean file pytorch_model.bin:  29%|██▉       | 245M/850M [00:51<02:03, 5.16MB/s][A[A[A
 
-Clean file spiece.model:  29%|██▉       | 225k/773k [00:01<00:02, 229kB/s][A[ADownload file pytorch_model.bin:   1%|          | 2.54M/231M [00:01<01:30, 2.65MB/s]Download file pytorch_model.bin:   3%|▎         | 7.10M/231M [00:02<01:00, 3.90MB/s]Download file pytorch_model.bin:   5%|▌         | 12.2M/231M [00:03<00:50, 4.57MB/s]Download file pytorch_model.bin:   8%|▊         | 17.4M/231M [00:04<00:45, 4.88MB/s]Download file pytorch_model.bin:  10%|▉         | 22.5M/231M [00:05<00:42, 5.08MB/s]Download file pytorch_model.bin:  12%|█▏        | 27.6M/231M [00:06<00:41, 5.14MB/s]Download file pytorch_model.bin:  14%|█▍        | 32.7M/231M [00:07<00:39, 5.22MB/s]Download file pytorch_model.bin:  16%|█▋        | 37.8M/231M [00:08<00:38, 5.25MB/s]Download file pytorch_model.bin:  19%|█▊        | 42.9M/231M [00:09<00:37, 5.28MB/s]Download file pytorch_model.bin:  21%|██        | 48.0M/231M [00:10<00:36, 5.30MB/s]Download file pytorch_model.bin:  23%|██▎       | 53.2M/231M [00:11<00:34, 5.34MB/s]Download file pytorch_model.bin:  25%|██▌       | 58.4M/231M [00:12<00:33, 5.37MB/s]
 
-Clean file spiece.model: 100%|██████████| 773k/773k [00:12<00:00, 229kB/s][A[ADownload file pytorch_model.bin:  27%|██▋       | 62.6M/231M [00:13<00:34, 5.07MB/s]Download file pytorch_model.bin:  29%|██▉       | 66.7M/231M [00:14<00:35, 4.83MB/s]Download file pytorch_model.bin:  31%|███       | 70.9M/231M [00:15<00:35, 4.73MB/s]Download file pytorch_model.bin:  33%|███▎      | 76.0M/231M [00:16<00:33, 4.91MB/s]Download file pytorch_model.bin:  35%|███▌      | 81.2M/231M [00:17<00:31, 5.05MB/s]Download file pytorch_model.bin:  37%|███▋      | 86.3M/231M [00:18<00:29, 5.14MB/s]Download file pytorch_model.bin:  40%|███▉      | 91.3M/231M [00:19<00:28, 5.17MB/s]Download file pytorch_model.bin:  42%|████▏     | 96.4M/231M [00:20<00:26, 5.24MB/s]Download file pytorch_model.bin:  44%|████▍     | 102M/231M [00:21<00:25, 5.29MB/s] Download file pytorch_model.bin:  46%|████▌     | 107M/231M [00:22<00:24, 5.31MB/s]Download file pytorch_model.bin:  48%|████▊     | 112M/231M [00:23<00:23, 5.31MB/s]Download file pytorch_model.bin:  51%|█████     | 117M/231M [00:24<00:22, 5.36MB/s]Download file pytorch_model.bin:  53%|█████▎    | 122M/231M [00:25<00:21, 5.34MB/s]Download file pytorch_model.bin:  55%|█████▌    | 127M/231M [00:26<00:20, 5.32MB/s]Download file pytorch_model.bin:  57%|█████▋    | 132M/231M [00:27<00:19, 5.36MB/s]Download file pytorch_model.bin:  60%|█████▉    | 138M/231M [00:28<00:18, 5.36MB/s]Download file pytorch_model.bin:  62%|██████▏   | 143M/231M [00:29<00:17, 5.37MB/s]Download file pytorch_model.bin:  64%|██████▍   | 148M/231M [00:30<00:16, 5.38MB/s]Download file pytorch_model.bin:  66%|██████▋   | 153M/231M [00:31<00:15, 5.38MB/s]Download file pytorch_model.bin:  68%|██████▊   | 158M/231M [00:32<00:14, 5.35MB/s]Download file pytorch_model.bin:  71%|███████   | 163M/231M [00:33<00:13, 5.36MB/s]Download file pytorch_model.bin:  73%|███████▎  | 168M/231M [00:34<00:12, 5.37MB/s]Download file pytorch_model.bin:  75%|███████▌  | 173M/231M [00:35<00:11, 5.38MB/s]Download file pytorch_model.bin:  77%|███████▋  | 178M/231M [00:36<00:10, 5.31MB/s]Download file pytorch_model.bin:  79%|███████▉  | 183M/231M [00:37<00:09, 5.11MB/s]Download file pytorch_model.bin:  81%|████████▏ | 188M/231M [00:38<00:08, 5.07MB/s]Download file pytorch_model.bin:  83%|████████▎ | 193M/231M [00:39<00:07, 5.16MB/s]Download file pytorch_model.bin:  86%|████████▌ | 198M/231M [00:40<00:06, 5.24MB/s]Download file pytorch_model.bin:  88%|████████▊ | 203M/231M [00:41<00:05, 5.25MB/s]Download file pytorch_model.bin:  90%|█████████ | 208M/231M [00:42<00:04, 5.26MB/s]Download file pytorch_model.bin:  92%|█████████▏| 213M/231M [00:43<00:03, 5.30MB/s]Download file pytorch_model.bin:  95%|█████████▍| 218M/231M [00:44<00:02, 5.33MB/s]Download file pytorch_model.bin:  97%|█████████▋| 223M/231M [00:45<00:01, 5.28MB/s]Download file pytorch_model.bin:  99%|█████████▉| 228M/231M [00:46<00:00, 5.33MB/s]
+Clean file pytorch_model.bin:  29%|██▉       | 250M/850M [00:52<02:01, 5.18MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   0%|          | 1.00k/231M [00:00<?, ?B/s][A[A[A
+Clean file pytorch_model.bin:  30%|███       | 255M/850M [00:53<01:59, 5.23MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   1%|          | 1.28M/231M [00:01<02:59, 1.34MB/s][A[A[A
+Clean file pytorch_model.bin:  31%|███       | 260M/850M [00:54<01:57, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   2%|▏         | 5.19M/231M [00:02<01:19, 2.96MB/s][A[A[A
+Clean file pytorch_model.bin:  31%|███       | 265M/850M [00:55<01:56, 5.26MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   4%|▍         | 9.13M/231M [00:03<01:06, 3.49MB/s][A[A[A
+Clean file pytorch_model.bin:  32%|███▏      | 270M/850M [00:56<01:55, 5.25MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   6%|▌         | 14.0M/231M [00:04<00:54, 4.14MB/s][A[A[A
+Clean file pytorch_model.bin:  32%|███▏      | 275M/850M [00:57<01:56, 5.19MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:   8%|▊         | 19.2M/231M [00:05<00:48, 4.58MB/s][A[A[A
+Clean file pytorch_model.bin:  33%|███▎      | 280M/850M [00:58<01:55, 5.17MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  11%|█         | 24.3M/231M [00:06<00:44, 4.86MB/s][A[A[A
+Clean file pytorch_model.bin:  34%|███▎      | 285M/850M [00:59<01:55, 5.14MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  13%|█▎        | 29.5M/231M [00:07<00:41, 5.04MB/s][A[A[A
+Clean file pytorch_model.bin:  34%|███▍      | 290M/850M [01:00<01:55, 5.09MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  15%|█▌        | 34.6M/231M [00:08<00:39, 5.15MB/s][A[A[A
+Clean file pytorch_model.bin:  35%|███▍      | 294M/850M [01:01<02:01, 4.80MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  17%|█▋        | 39.8M/231M [00:09<00:38, 5.22MB/s][A[A[A
+Clean file pytorch_model.bin:  35%|███▌      | 298M/850M [01:02<02:05, 4.61MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  19%|█▉        | 44.9M/231M [00:10<00:36, 5.27MB/s][A[A[A
+Clean file pytorch_model.bin:  36%|███▌      | 303M/850M [01:03<02:00, 4.78MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  22%|██▏       | 50.1M/231M [00:11<00:35, 5.31MB/s][A[A[A
+Clean file pytorch_model.bin:  36%|███▌      | 308M/850M [01:04<01:56, 4.90MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  24%|██▎       | 54.6M/231M [00:12<00:35, 5.15MB/s][A[A[A
+Clean file pytorch_model.bin:  37%|███▋      | 312M/850M [01:05<01:53, 4.96MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  26%|██▌       | 59.8M/231M [00:13<00:34, 5.22MB/s][A[A[A
+Clean file pytorch_model.bin:  37%|███▋      | 317M/850M [01:06<01:50, 5.04MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  28%|██▊       | 64.9M/231M [00:14<00:33, 5.27MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 231M/231M [01:02<00:00, 5.33MB/s]
+Clean file pytorch_model.bin:  38%|███▊      | 322M/850M [01:07<01:48, 5.11MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  30%|███       | 70.0M/231M [00:15<00:31, 5.30MB/s][A[A[A
+Clean file pytorch_model.bin:  39%|███▊      | 328M/850M [01:08<01:45, 5.18MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  33%|███▎      | 75.1M/231M [00:16<00:30, 5.31MB/s][A[A[A
+Clean file pytorch_model.bin:  39%|███▉      | 333M/850M [01:09<01:44, 5.20MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  35%|███▍      | 80.3M/231M [00:17<00:29, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:  40%|███▉      | 337M/850M [01:10<01:45, 5.10MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  37%|███▋      | 85.3M/231M [00:18<00:28, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:  40%|████      | 342M/850M [01:11<01:45, 5.07MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  39%|███▉      | 90.4M/231M [00:19<00:27, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:  41%|████      | 346M/850M [01:12<01:50, 4.81MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  41%|████▏     | 95.5M/231M [00:20<00:26, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:  41%|████      | 350M/850M [01:13<01:53, 4.64MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  44%|████▎     | 101M/231M [00:21<00:25, 5.34MB/s] [A[A[A
+Clean file pytorch_model.bin:  42%|████▏     | 354M/850M [01:14<01:57, 4.42MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  46%|████▌     | 106M/231M [00:22<00:24, 5.35MB/s][A[A[A
+Clean file pytorch_model.bin:  42%|████▏     | 358M/850M [01:15<02:01, 4.26MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  48%|████▊     | 111M/231M [00:23<00:23, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  43%|████▎     | 362M/850M [01:16<01:58, 4.34MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  50%|█████     | 116M/231M [00:24<00:22, 5.38MB/s][A[A[A
+Clean file pytorch_model.bin:  43%|████▎     | 367M/850M [01:17<01:52, 4.53MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  52%|█████▏    | 121M/231M [00:25<00:21, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:  44%|████▎     | 371M/850M [01:18<01:47, 4.68MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  55%|█████▍    | 126M/231M [00:26<00:20, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:  44%|████▍     | 376M/850M [01:19<01:43, 4.79MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  57%|█████▋    | 131M/231M [00:27<00:19, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:  45%|████▍     | 381M/850M [01:20<01:40, 4.91MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  59%|█████▉    | 136M/231M [00:28<00:18, 5.35MB/s][A[A[A
+Clean file pytorch_model.bin:  45%|████▌     | 386M/850M [01:21<01:38, 4.92MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  61%|██████▏   | 142M/231M [00:29<00:17, 5.37MB/s][A[A[A
+Clean file pytorch_model.bin:  46%|████▌     | 390M/850M [01:22<01:40, 4.80MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  64%|██████▎   | 147M/231M [00:30<00:16, 5.39MB/s][A[A[A
+Clean file pytorch_model.bin:  46%|████▋     | 395M/850M [01:23<01:41, 4.69MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  66%|██████▌   | 152M/231M [00:31<00:15, 5.26MB/s][A[A[A
+Clean file pytorch_model.bin:  47%|████▋     | 399M/850M [01:24<01:38, 4.82MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  68%|██████▊   | 157M/231M [00:32<00:14, 5.30MB/s][A[A[A
+Clean file pytorch_model.bin:  48%|████▊     | 404M/850M [01:25<01:34, 4.93MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  70%|██████▉   | 162M/231M [00:33<00:13, 5.23MB/s][A[A[A
+Clean file pytorch_model.bin:  48%|████▊     | 409M/850M [01:26<01:32, 5.01MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  72%|███████▏  | 167M/231M [00:34<00:12, 5.28MB/s][A[A[A
+Clean file pytorch_model.bin:  49%|████▊     | 414M/850M [01:27<01:29, 5.10MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  74%|███████▍  | 172M/231M [00:35<00:11, 5.31MB/s][A[A[A
+Clean file pytorch_model.bin:  49%|████▉     | 419M/850M [01:28<01:29, 5.05MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  77%|███████▋  | 177M/231M [00:36<00:10, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:  50%|████▉     | 423M/850M [01:29<01:33, 4.79MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  79%|███████▉  | 182M/231M [00:37<00:09, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:  50%|█████     | 427M/850M [01:30<01:36, 4.58MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  81%|████████  | 187M/231M [00:38<00:08, 5.32MB/s][A[A[A
+Clean file pytorch_model.bin:  51%|█████     | 432M/850M [01:31<01:34, 4.65MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  83%|████████▎ | 192M/231M [00:39<00:07, 5.33MB/s][A[A[A
+Clean file pytorch_model.bin:  51%|█████▏    | 437M/850M [01:32<01:29, 4.86MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  85%|████████▌ | 197M/231M [00:40<00:06, 5.34MB/s][A[A[A
+Clean file pytorch_model.bin:  52%|█████▏    | 442M/850M [01:33<01:25, 5.00MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  87%|████████▋ | 202M/231M [00:41<00:05, 5.11MB/s][A[A[A
+Clean file pytorch_model.bin:  53%|█████▎    | 447M/850M [01:34<01:24, 5.03MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  89%|████████▉ | 206M/231M [00:42<00:05, 4.80MB/s][A[A[A
+Clean file pytorch_model.bin:  53%|█████▎    | 452M/850M [01:35<01:21, 5.11MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  91%|█████████ | 210M/231M [00:43<00:04, 4.64MB/s][A[A[A
+Clean file pytorch_model.bin:  54%|█████▎    | 457M/850M [01:36<01:20, 5.15MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  93%|█████████▎| 215M/231M [00:44<00:03, 4.86MB/s][A[A[A
+Clean file pytorch_model.bin:  54%|█████▍    | 462M/850M [01:37<01:18, 5.16MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  95%|█████████▌| 220M/231M [00:45<00:02, 5.02MB/s][A[A[A
+Clean file pytorch_model.bin:  55%|█████▍    | 467M/850M [01:38<01:17, 5.22MB/s][A[A[A
 
 
-Clean file pytorch_model.bin:  98%|█████████▊| 225M/231M [00:46<00:01, 5.12MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 231M/231M [01:35<00:00, 292kB/s] Download file pytorch_model.bin: 100%|██████████| 231M/231M [01:35<00:00, 292kB/s]Download file pytorch_model.bin: 100%|██████████| 231M/231M [01:35<00:00, 2.54MB/s]
+Clean file pytorch_model.bin:  55%|█████▌    | 472M/850M [01:39<01:15, 5.24MB/s][A[A[A
 
-Download file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 8.23kB/s][A
-Download file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 8.23kB/s][ADownload file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 8.23kB/s]
 
+Clean file pytorch_model.bin:  56%|█████▌    | 476M/850M [01:40<01:17, 5.09MB/s][A[A[A
 
-Clean file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 7.61kB/s][A[A
 
-Clean file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 7.61kB/s][A[AClean file spiece.model: 100%|██████████| 773k/773k [01:35<00:00, 8.31kB/s]
+Clean file pytorch_model.bin:  57%|█████▋    | 481M/850M [01:41<01:19, 4.89MB/s][A[A[A
 
 
+Clean file pytorch_model.bin:  57%|█████▋    | 486M/850M [01:42<01:16, 5.02MB/s][A[A[A
 
-Clean file pytorch_model.bin: 100%|██████████| 231M/231M [00:47<00:00, 5.39MB/s][A[A[A
 
+Clean file pytorch_model.bin:  58%|█████▊    | 491M/850M [01:43<01:14, 5.04MB/s][A[A[A
 
-Clean file pytorch_model.bin: 100%|██████████| 231M/231M [00:47<00:00, 5.39MB/s][A[A[AClean file pytorch_model.bin: 100%|██████████| 231M/231M [00:47<00:00, 5.14MB/s]
-2023-12-16 01:20:16 INFO     creating t5-small-newsqa-qag-trained/eval
-2023-12-16 01:20:16 INFO     copying small_trained_ckpt/best_model/eval/samples.test.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-small-newsqa-qag-trained/eval
-2023-12-16 01:20:16 INFO     copying small_trained_ckpt/best_model/eval/samples.validation.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-small-newsqa-qag-trained/eval
-2023-12-16 01:20:16 INFO     copying small_trained_ckpt/best_model/eval/metric.first.answer.paragraph.questions_answers.StellarMilk_newsqa.default.json -> t5-small-newsqa-qag-trained/eval
-To https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained
-   9b6534b..8e89480  main -> main
 
-2023-12-16 01:20:18 WARNING  To https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained
-   9b6534b..8e89480  main -> main
+Clean file pytorch_model.bin:  58%|█████▊    | 496M/850M [01:44<01:12, 5.12MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  59%|█████▉    | 501M/850M [01:45<01:10, 5.17MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  59%|█████▉    | 506M/850M [01:46<01:09, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  60%|██████    | 511M/850M [01:47<01:08, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  61%|██████    | 516M/850M [01:48<01:06, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  61%|██████▏   | 521M/850M [01:49<01:05, 5.25MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  62%|██████▏   | 526M/850M [01:50<01:05, 5.18MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  62%|██████▏   | 531M/850M [01:51<01:03, 5.24MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  63%|██████▎   | 536M/850M [01:52<01:02, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  64%|██████▎   | 541M/850M [01:53<01:02, 5.19MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  64%|██████▍   | 546M/850M [01:54<01:01, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  65%|██████▍   | 551M/850M [01:55<00:59, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  65%|██████▌   | 556M/850M [01:56<00:59, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  66%|██████▌   | 561M/850M [01:57<00:57, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  67%|██████▋   | 566M/850M [01:58<00:56, 5.28MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  67%|██████▋   | 571M/850M [01:59<00:56, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  68%|██████▊   | 576M/850M [02:00<00:55, 5.16MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  68%|██████▊   | 581M/850M [02:01<00:54, 5.20MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  69%|██████▉   | 586M/850M [02:02<00:53, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  69%|██████▉   | 591M/850M [02:03<00:51, 5.24MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  70%|███████   | 596M/850M [02:04<00:50, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  71%|███████   | 601M/850M [02:05<00:49, 5.28MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  71%|███████▏  | 606M/850M [02:06<00:48, 5.30MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  72%|███████▏  | 611M/850M [02:07<00:47, 5.29MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  72%|███████▏  | 615M/850M [02:08<00:48, 5.09MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  73%|███████▎  | 619M/850M [02:09<00:50, 4.79MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  73%|███████▎  | 623M/850M [02:10<00:52, 4.58MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  74%|███████▍  | 628M/850M [02:11<00:48, 4.77MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  74%|███████▍  | 633M/850M [02:12<00:46, 4.92MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  75%|███████▌  | 638M/850M [02:13<00:44, 5.03MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  76%|███████▌  | 643M/850M [02:14<00:42, 5.11MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  76%|███████▌  | 648M/850M [02:15<00:41, 5.14MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  77%|███████▋  | 653M/850M [02:16<00:39, 5.18MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  77%|███████▋  | 658M/850M [02:17<00:38, 5.21MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  78%|███████▊  | 664M/850M [02:18<00:37, 5.24MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  79%|███████▊  | 669M/850M [02:19<00:36, 5.24MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  79%|███████▉  | 674M/850M [02:20<00:35, 5.24MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  80%|███████▉  | 679M/850M [02:21<00:34, 5.25MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  80%|████████  | 684M/850M [02:22<00:33, 5.25MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  81%|████████  | 689M/850M [02:23<00:32, 5.26MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  82%|████████▏ | 694M/850M [02:24<00:31, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  82%|████████▏ | 699M/850M [02:25<00:30, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  83%|████████▎ | 704M/850M [02:26<00:29, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  83%|████████▎ | 709M/850M [02:27<00:28, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  84%|████████▍ | 713M/850M [02:28<00:27, 5.20MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  84%|████████▍ | 718M/850M [02:29<00:26, 5.18MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  85%|████████▌ | 723M/850M [02:30<00:25, 5.20MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  86%|████████▌ | 728M/850M [02:31<00:24, 5.18MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  86%|████████▌ | 733M/850M [02:32<00:23, 5.17MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  87%|████████▋ | 738M/850M [02:33<00:22, 5.21MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  87%|████████▋ | 743M/850M [02:34<00:21, 5.19MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  88%|████████▊ | 748M/850M [02:35<00:20, 5.18MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  89%|████████▊ | 753M/850M [02:36<00:19, 5.21MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  89%|████████▉ | 758M/850M [02:37<00:18, 5.20MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  90%|████████▉ | 763M/850M [02:38<00:17, 5.22MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  90%|█████████ | 768M/850M [02:39<00:16, 5.23MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  91%|█████████ | 773M/850M [02:40<00:15, 5.13MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  91%|█████████▏| 777M/850M [02:41<00:15, 5.06MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  92%|█████████▏| 782M/850M [02:42<00:14, 5.02MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  93%|█████████▎| 787M/850M [02:43<00:13, 5.00MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  93%|█████████▎| 792M/850M [02:44<00:12, 4.98MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  94%|█████████▎| 796M/850M [02:45<00:11, 4.98MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  94%|█████████▍| 801M/850M [02:46<00:10, 4.80MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  95%|█████████▍| 804M/850M [02:47<00:10, 4.57MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  95%|█████████▌| 808M/850M [02:48<00:10, 4.37MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  96%|█████████▌| 813M/850M [02:49<00:08, 4.55MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  96%|█████████▌| 818M/850M [02:50<00:07, 4.78MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  97%|█████████▋| 823M/850M [02:51<00:05, 4.95MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  97%|█████████▋| 828M/850M [02:52<00:04, 5.05MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  98%|█████████▊| 833M/850M [02:53<00:03, 5.13MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  99%|█████████▊| 838M/850M [02:54<00:02, 5.15MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  99%|█████████▉| 842M/850M [02:55<00:01, 4.80MB/s][A[A[A
+
+
+Clean file pytorch_model.bin:  99%|█████████▉| 846M/850M [02:56<00:00, 4.65MB/s][A[A[ADownload file pytorch_model.bin: 100%|██████████| 850M/850M [06:01<00:00, 85.7kB/s]Download file pytorch_model.bin: 100%|██████████| 850M/850M [06:01<00:00, 85.7kB/s]Download file pytorch_model.bin: 100%|██████████| 850M/850M [06:01<00:00, 2.47MB/s]
+
+Download file spiece.model: 100%|██████████| 773k/773k [06:01<00:00, 1.91kB/s][A
+Download file spiece.model: 100%|██████████| 773k/773k [06:01<00:00, 1.91kB/s][ADownload file spiece.model: 100%|██████████| 773k/773k [06:01<00:00, 2.10kB/s]
+
+
+Clean file spiece.model: 100%|██████████| 773k/773k [06:00<00:00, 2.19kB/s][A[A
+
+Clean file spiece.model: 100%|██████████| 773k/773k [06:00<00:00, 2.19kB/s][A[AClean file spiece.model: 100%|██████████| 773k/773k [06:00<00:00, 2.19kB/s]
+
+
+
+Clean file pytorch_model.bin: 100%|██████████| 850M/850M [02:57<00:00, 4.59MB/s][A[A[A
+
+
+Clean file pytorch_model.bin: 100%|██████████| 850M/850M [02:57<00:00, 4.59MB/s][A[A[AClean file pytorch_model.bin: 100%|██████████| 850M/850M [02:57<00:00, 5.03MB/s]
+2023-12-19 12:34:49 INFO     creating t5-base-newsqa-qag-trained/eval
+2023-12-19 12:34:49 INFO     copying base_trained_ckpt/best_model/eval/samples.test.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-base-newsqa-qag-trained/eval
+2023-12-19 12:34:49 INFO     copying base_trained_ckpt/best_model/eval/samples.validation.hyp.paragraph.questions_answers.StellarMilk_newsqa.default.txt -> t5-base-newsqa-qag-trained/eval
+2023-12-19 12:34:50 INFO     copying base_trained_ckpt/best_model/eval/metric.first.answer.paragraph.questions_answers.StellarMilk_newsqa.default.json -> t5-base-newsqa-qag-trained/eval
+To https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained
+   b04ddc9..55569bc  main -> main
+
+2023-12-19 12:34:52 WARNING  To https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained
+   b04ddc9..55569bc  main -> main
 
