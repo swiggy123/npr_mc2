@@ -12,4 +12,4 @@ python3 -m pip install -r requirements.txt
 python3 -m spacy download en_core_web_sm
 python3 -m pip install -e ./lm-question-generation
 
-lmqg-train-search -d "StellarMilk/newsqa" -m "lmqg/t5-small-squad-qag" -b 2 -g 2 4 -c "small_finetuned_ckpt" -i 'paragraph' -o 'questions_answers' -p 'qag' --epoch-partial 10 -e 15 --max-length-output-eval 512 --max-length-output 512
+lmqg-train-search -d "StellarMilk/newsqa" -m "lmqg/t5-small-squad-qag" -l 0.00001 --epoch-partial 5 -e 10 -b 2 -g 2 4 -c "small_finetuned_ckpt" -i 'paragraph' -o 'questions_answers' -p 'qag' --max-length-output-eval 512 --max-length-output 512
