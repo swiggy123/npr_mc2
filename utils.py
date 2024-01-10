@@ -88,3 +88,76 @@ def get_loss(log_file_path, best_model_name):
     data_avg_los = pd.DataFrame({"Epoch": epochs_for_avg_losses, "Loss": average_losses})
 
     return df_steps, data_avg_los
+
+
+def load_evaluation_data(folders):
+    df_list = []
+    for folder in folders:
+        df = pd.read_json(f"./{folder}/metric.first.answer.paragraph.questions_answers.StellarMilk_newsqa.default.json")
+        df["Model"] = folder[11:]
+        df_list.append(df)
+
+    df = pd.concat(df_list)
+    df = df.reset_index(names=["Metric"])
+    df = df.melt(id_vars=["Metric", "Model"], var_name="Dataset", value_name="Value")
+    return df
+
+
+def plot_results(df):
+    sns.set_theme(style="whitegrid")
+    g = sns.FacetGrid(df, row="Metric", height=4, aspect=2, sharex=False, sharey=False)
+    g.map(
+        sns.barplot,
+        "Model",
+        "Value",
+        "Dataset",
+        palette="deep",
+        order=["small", "small_trained", "small_finetuned", "small_combined_trained", "small_trained"],
+        hue_order=["validation", "test"],
+    )
+    g.add_legend()
+
+
+def load_paragraphs(path):
+    """
+    Load paragraphs from a file and return a list of paragraphs. Each paragraph is a list of dictionaries with keys "Question" and "Answer".
+    """
+    paragraphs = []
+    with open(path, "r", encoding="UTF-8") as file:
+        for line in file:
+            paragraphs.append(line)
+
+    parsed_paragraphs = []
+    failed_paragraphs = []
+    for paragraph in paragraphs:
+        q_and_as = []
+        failed = False
+        for q_and_a in paragraph.split(" | "):
+            try:
+                q_and_as.append(
+                    {
+                        "Question": q_and_a.split(", answer:")[0].split("question: ")[1].strip(),
+                        "Answer": q_and_a.split(", answer:")[1].strip(),
+                    }
+                )
+            except IndexError:
+                failed = True
+                break
+        parsed_paragraphs.append(q_and_as)
+        failed_paragraphs.append(paragraph if failed else None)
+    return parsed_paragraphs, failed_paragraphs
+
+
+def plot_results_bigger(df_bigger):
+    sns.set_theme(style="whitegrid")
+    g = sns.FacetGrid(df_bigger, row="Metric", height=5, aspect=2, sharex=False, sharey=False)
+    g.map(
+        sns.barplot,
+        "Model",
+        "Value",
+        "Dataset",
+        palette="deep",
+        order=["small", "small_trained", "small_finetuned", "small_modified_finetuned", "base", "base_trained"],
+        hue_order=["validation", "test"],
+    )
+    g.add_legend()
