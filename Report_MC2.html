@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>report</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Report_MC2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14672,7 +14672,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Modellarchitektur">Modellarchitektur<a class="anchor-link" href="#Modellarchitektur">&#182;</a></h2><p>Um den Use- Case möglichst gut abzudecken sind wir auf das Paper von Asahi Ushio and Fernando Alva-Manchego and Jose Camacho-Collados gestossen (<a href="https://arxiv.org/abs/2305.17002">https://arxiv.org/abs/2305.17002</a>), welches unterschiedliche QAG models vergleicht.</p>
+<h2 id="Modellarchitektur">Modellarchitektur<a class="anchor-link" href="#Modellarchitektur">&#182;</a></h2><p>Um den Use-Case möglichst gut abzudecken sind wir auf das Paper von Asahi Ushio and Fernando Alva-Manchego and Jose Camacho-Collados gestossen (<a href="https://arxiv.org/abs/2305.17002">https://arxiv.org/abs/2305.17002</a>), welches unterschiedliche QAG models vergleicht.</p>
 <p>Das beste beschriebene Modell aufgrund von der Metrik F1/exact match, welches in der Tabelle 2 beschrieben wird ist die T5- End2End Architektur. Zusätzlich zu den besseren Metriken sind die Trainingskosten beim End2End Aufbau besser.</p>
 <h3 id="End2End-Ansatz">End2End Ansatz<a class="anchor-link" href="#End2End-Ansatz">&#182;</a></h3><p>Es gibt unterschiedliche QAG-Ansätze. In diesem Bericht wird der Ansatz End2End verwendet, welcher innerhalb eines Modelles und in &quot;einem Schritt&quot;, sowohl die Frage, wie auch die Antwort erstellt.</p>
 <img src="https://github.com/swiggy123/npr_mc2/blob/main/images/qag.png?raw=true" alt="Aufbau" width="500">
@@ -14716,9 +14716,22 @@ Text-to-Text Transformer&quot; (<a href="https://arxiv.org/abs/1910.10683">https
 </tbody>
 </table>
 <h4 id="Pretraining">Pretraining<a class="anchor-link" href="#Pretraining">&#182;</a></h4><p>Beim Pretraining wurden 15 % der Tokens angepasst. Diese 15 % werden mit einer durchschnittlichen Spanlänge von 3 mit einer Maske ersetzt.</p>
-<p>Objective |Inputs| Targets|
-| :-------: |:-------:|:-------:|
-|replace spans  |Thank you &lt;X&gt; me to your party &lt;Y&gt; week . |&lt;X&gt; for inviting &lt;Y&gt; last &lt;Z&gt;|</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Objective</th>
+  <th style="text-align:center">Inputs</th>
+  <th style="text-align:center">Targets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">replace spans</td>
+  <td style="text-align:center">Thank you &lt;X&gt; me to your party &lt;Y&gt; week .</td>
+  <td style="text-align:center">&lt;X&gt; for inviting &lt;Y&gt; last &lt;Z&gt;</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -14739,7 +14752,7 @@ Text-to-Text Transformer&quot; (<a href="https://arxiv.org/abs/1910.10683">https
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Standard libraries</span>
@@ -14775,7 +14788,7 @@ Text-to-Text Transformer&quot; (<a href="https://arxiv.org/abs/1910.10683">https
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenizer</span>
@@ -14803,20 +14816,6 @@ Text-to-Text Transformer&quot; (<a href="https://arxiv.org/abs/1910.10683">https
 
 
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Using bos_token, but it is not set yet.
-Using sep_token, but it is not set yet.
-Using cls_token, but it is not set yet.
-Using mask_token, but it is not set yet.
-</pre>
-</div>
-</div>
 <div class="jp-OutputArea-child">
     
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -14851,7 +14850,7 @@ Using mask_token, but it is not set yet.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;StellarMilk/newsqa&quot;</span><span class="p">)</span>
@@ -14867,7 +14866,7 @@ Using mask_token, but it is not set yet.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">number_of_answers</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">answers</span><span class="p">)</span> <span class="k">for</span> <span class="n">answers</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;answers&quot;</span><span class="p">]]</span>
@@ -14897,7 +14896,7 @@ Using mask_token, but it is not set yet.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">number_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">number_of_answers</span><span class="p">)</span>
@@ -14963,7 +14962,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qa</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">qa</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">))</span> <span class="k">for</span> <span class="n">qa</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;questions_answers&quot;</span><span class="p">]]</span>
@@ -15016,7 +15015,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">number_of_answers_set</span> <span class="o">=</span> <span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">answers</span><span class="p">))</span> <span class="k">for</span> <span class="n">answers</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;answers&quot;</span><span class="p">]]</span>
@@ -15107,7 +15106,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">number_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="n">answers</span><span class="o">.</span><span class="n">split</span><span class="p">())</span> <span class="k">for</span> <span class="n">answers</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;train&quot;</span><span class="p">][</span><span class="s2">&quot;paragraph&quot;</span><span class="p">]])</span>
@@ -15184,7 +15183,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">count_words</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -15215,7 +15214,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Most occured words from the paragraph&quot;</span><span class="p">)</span>
@@ -15263,7 +15262,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Most occured words from the questions&quot;</span><span class="p">)</span>
@@ -15311,7 +15310,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Most occured words from the answers&quot;</span><span class="p">)</span>
@@ -15371,7 +15370,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">values1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">word_counts_paragraph</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
@@ -15460,7 +15459,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%capture</span>
@@ -15477,7 +15476,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">words_in_train</span> <span class="o">=</span> <span class="n">word_counts_paragraph</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
@@ -15534,35 +15533,143 @@ class="
 <p>Mit der LMQG CLI Schnittstelle konnte das Modell simpel trainiert werden. Wir trainierten das Modell basierend auf den Hyperparametern des ACL 2023 Papers, welche hier zu finden sind: <a href="https://github.com/asahi417/lm-question-generation/blob/master/misc/2023_acl_qag/model_finetuning.end2end.sh">2023_acl_qag/model_finetuning.end2end.sh</a>. Unser Trainingsprozess wurde Beispielweise beim t5-small Modell so gestartet:</p>
 <div class="highlight"><pre><span></span>lmqg-train-search -d <span class="s2">&quot;StellarMilk/newsqa&quot;</span> -m <span class="s2">&quot;t5-small&quot;</span> -b <span class="m">2</span> -g <span class="m">2</span> <span class="m">4</span> -c <span class="s2">&quot;small_trained_ckpt&quot;</span> -i <span class="s1">&#39;paragraph&#39;</span> -o <span class="s1">&#39;questions_answers&#39;</span> -p <span class="s1">&#39;qag&#39;</span> --epoch-partial <span class="m">10</span> -e <span class="m">15</span> --max-length-output-eval <span class="m">512</span> --max-length-output <span class="m">512</span>
 </pre></div>
-<p>Wobei die Parameter folgendes bedeuten:
-|        Parameter         |                                Beschreibung                                 |   Gewählter Wert   |
-| :----------------------: | :-------------------------------------------------------------------------: | :----------------: |
-|            -d            |              Hugging Face Dataset, das verwendet werden soll.               | StellarMilk/newsqa |
-|            -m            |                         Modell, das trainiert wird.                         |      t5-small      |
-|            -b            |                                Batchgrösse.                                 |         2          |
-|            -g            |                    Schritte für Gradientenakkumulation.                     |      2 oder 4      |
-|            -c            |                            Pfad für Checkpoint.                             | small_trained_ckpt |
-|            -i            |                         Input-Spalte des Datasets.                          |     paragraph      |
-|            -o            |                         Output-Spalte des Datasets.                         | questions_answers  |
-|            -p            |                              Modelltyp-Prefix.                              |        qag         |
-|     --epoch-partial      |   Anzahl der Epochen, die in der ersten Trainingsphase trainiert werden.    |         10         |
-|            -e            | Mindestanzahl der Epochen, die in der zweiten Trainingsphase erreicht wird. |         15         |
-| --max-length-output-eval |      Maximale Sequenzlänge für die Ausgabesequenz bei der Evaluation.       |        512         |
-|   --max-length-output    |                Maximale Sequenzlänge für die Ausgabesequenz.                |        512         |</p>
+<br>
+Wobei die Parameter folgendes bedeuten:
+<table>
+<thead>
+<tr>
+  <th style="text-align:center">Parameter</th>
+  <th style="text-align:center">Beschreibung</th>
+  <th style="text-align:center">Gewählter Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:center">-d</td>
+  <td style="text-align:center">Hugging Face Dataset, das verwendet werden soll.</td>
+  <td style="text-align:center">StellarMilk/newsqa</td>
+</tr>
+<tr>
+  <td style="text-align:center">-m</td>
+  <td style="text-align:center">Modell, das trainiert wird.</td>
+  <td style="text-align:center">t5-small</td>
+</tr>
+<tr>
+  <td style="text-align:center">-b</td>
+  <td style="text-align:center">Batchgrösse.</td>
+  <td style="text-align:center">2</td>
+</tr>
+<tr>
+  <td style="text-align:center">-g</td>
+  <td style="text-align:center">Schritte für Gradientenakkumulation.</td>
+  <td style="text-align:center">2 oder 4</td>
+</tr>
+<tr>
+  <td style="text-align:center">-c</td>
+  <td style="text-align:center">Pfad für Checkpoint.</td>
+  <td style="text-align:center">small_trained_ckpt</td>
+</tr>
+<tr>
+  <td style="text-align:center">-i</td>
+  <td style="text-align:center">Input-Spalte des Datasets.</td>
+  <td style="text-align:center">paragraph</td>
+</tr>
+<tr>
+  <td style="text-align:center">-o</td>
+  <td style="text-align:center">Output-Spalte des Datasets.</td>
+  <td style="text-align:center">questions_answers</td>
+</tr>
+<tr>
+  <td style="text-align:center">-p</td>
+  <td style="text-align:center">Modelltyp-Prefix.</td>
+  <td style="text-align:center">qag</td>
+</tr>
+<tr>
+  <td style="text-align:center">--epoch-partial</td>
+  <td style="text-align:center">Anzahl der Epochen, die in der ersten Trainingsphase trainiert werden.</td>
+  <td style="text-align:center">10</td>
+</tr>
+<tr>
+  <td style="text-align:center">-e</td>
+  <td style="text-align:center">Mindestanzahl der Epochen, die in der zweiten Trainingsphase erreicht wird.</td>
+  <td style="text-align:center">15</td>
+</tr>
+<tr>
+  <td style="text-align:center">--max-length-output-eval</td>
+  <td style="text-align:center">Maximale Sequenzlänge für die Ausgabesequenz bei der Evaluation.</td>
+  <td style="text-align:center">512</td>
+</tr>
+<tr>
+  <td style="text-align:center">--max-length-output</td>
+  <td style="text-align:center">Maximale Sequenzlänge für die Ausgabesequenz.</td>
+  <td style="text-align:center">512</td>
+</tr>
+</tbody>
+</table>
 <p>Das Modell wird in einem 2-Phasen Hyperparameteroptimierungsprozess trainiert, welche in dieser Grafik dargestellt ist:</p>
 <p><img src="https://raw.githubusercontent.com/asahi417/lm-question-generation/master/assets/grid_search.png" alt="Trainingsprozess" width="800"><br></p>
 <p>In unserem Beispiel werden in der ersten Phase 12 Modelle 10 Epochen trainiert. Danach werden die besten 5 Modelle gewählt und in der zweiten Phase 5 weitere Epochen trainiert (Total 15). Falls das beste Modell bei der Epoche 15 am besten ist, wird dieses Modell weitertrainiert, bis die Validierungsmetrik (standardmässig BLEU-4) nicht mehr besser wird. Falls das beste Modell bei der Epoche 15 nicht am besten ist, wird der Checkpoint mit der besten Metrik gewählt und nicht weitertrainiert.</p>
-<h3 id="Modellliste">Modellliste<a class="anchor-link" href="#Modellliste">&#182;</a></h3><p>Hier eine Auflistung aller trainierten und/oder evaluierten Modelle:
-| Hugging Face Modellname                                                                                                         | Beschreibung                                                                               | Evaluationsordner                    | Selbst trainiert? |
-| :------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- | :----------------------------------- | :---------------- |
-| <a href="https://huggingface.co/lmqg/t5-base-squad-qag">lmqg/t5-base-squad-qag</a>                                                         | T5-Baseline Modell, welches auf SQuAD trainiert wurde.                                     | evaluation_base/                     | Nein              |
-| <a href="https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained">StellarMilk/t5-base-newsqa-qag-trained</a>                         | T5-Baseline Modell, welches auf NewsQA trainiert wurde.                                    | evaluation_base_trained/             | Ja                |
-| <a href="https://huggingface.co/lmqg/t5-small-squad-qag">lmqg/t5-small-squad-qag</a>                                                       | T5-Small Modell, welches auf SQuAD trainiert wurde.                                        | evaluation_small/                    | Nein              |
-| <a href="https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained">StellarMilk/t5-small-newsqa-qag-trained</a>                       | T5-Small Modell, welches auf NewsQA trainiert wurde.                                       | evaluation_small_trained/            | Ja                |
-| <a href="https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned">StellarMilk/t5-small-newsqa-qag-finetuned</a>                   | lmqg/t5-small-squad-qag Modell, welches auf NewsQA weitertrainiert wurde.                  | evaluation_small_finetuned/          | Ja                |
-| <a href="https://huggingface.co/StellarMilk/t5-small-newsqa-modified-qag-finetuned">StellarMilk/t5-small-newsqa-modified-qag-finetuned</a> | lmqg/t5-small-squad-qag Modell, welches auf das modifizierte NewsQA weitertrainiert wurde. | evaluation_small_modified_finetuned/ | Ja                |
-| <a href="https://huggingface.co/StellarMilk/t5-small-squad-newsqa-qag-trained">StellarMilk/t5-small-squad-newsqa-qag-trained</a>           | T5-Small Modell, welches auf SQuAD und NewsQA trainiert wurde.                             | evaluation_small_combined_trained/   | Ja                |
-| <a href="https://huggingface.co/StellarMilk/t5-small-squad-qag-recreated">StellarMilk/t5-small-squad-qag-recreated</a>                     | Recreation des lmqg/t5-small-squad-qag Modells                                             | evaluation_small_recreated/          | Ja                |</p>
+<h3 id="Modellliste">Modellliste<a class="anchor-link" href="#Modellliste">&#182;</a></h3><p>Hier eine Auflistung aller trainierten und/oder evaluierten Modelle:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hugging Face Modellname</th>
+  <th style="text-align:left">Beschreibung</th>
+  <th style="text-align:left">Evaluationsordner</th>
+  <th style="text-align:left">Selbst trainiert?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/lmqg/t5-base-squad-qag">lmqg/t5-base-squad-qag</a></td>
+  <td style="text-align:left">T5-Baseline Modell, welches auf SQuAD trainiert wurde.</td>
+  <td style="text-align:left">evaluation_base/</td>
+  <td style="text-align:left">Nein</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-base-newsqa-qag-trained">StellarMilk/t5-base-newsqa-qag-trained</a></td>
+  <td style="text-align:left">T5-Baseline Modell, welches auf NewsQA trainiert wurde.</td>
+  <td style="text-align:left">evaluation_base_trained/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/lmqg/t5-small-squad-qag">lmqg/t5-small-squad-qag</a></td>
+  <td style="text-align:left">T5-Small Modell, welches auf SQuAD trainiert wurde.</td>
+  <td style="text-align:left">evaluation_small/</td>
+  <td style="text-align:left">Nein</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-small-newsqa-qag-trained">StellarMilk/t5-small-newsqa-qag-trained</a></td>
+  <td style="text-align:left">T5-Small Modell, welches auf NewsQA trainiert wurde.</td>
+  <td style="text-align:left">evaluation_small_trained/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-small-newsqa-qag-finetuned">StellarMilk/t5-small-newsqa-qag-finetuned</a></td>
+  <td style="text-align:left">lmqg/t5-small-squad-qag Modell, welches auf NewsQA weitertrainiert wurde.</td>
+  <td style="text-align:left">evaluation_small_finetuned/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-small-newsqa-modified-qag-finetuned">StellarMilk/t5-small-newsqa-modified-qag-finetuned</a></td>
+  <td style="text-align:left">lmqg/t5-small-squad-qag Modell, welches auf das modifizierte NewsQA weitertrainiert wurde.</td>
+  <td style="text-align:left">evaluation_small_modified_finetuned/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-small-squad-newsqa-qag-trained">StellarMilk/t5-small-squad-newsqa-qag-trained</a></td>
+  <td style="text-align:left">T5-Small Modell, welches auf SQuAD und NewsQA trainiert wurde.</td>
+  <td style="text-align:left">evaluation_small_combined_trained/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="https://huggingface.co/StellarMilk/t5-small-squad-qag-recreated">StellarMilk/t5-small-squad-qag-recreated</a></td>
+  <td style="text-align:left">Recreation des lmqg/t5-small-squad-qag Modells</td>
+  <td style="text-align:left">evaluation_small_recreated/</td>
+  <td style="text-align:left">Ja</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
@@ -15584,7 +15691,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">evaluation_folder</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;train_small&quot;</span><span class="p">,</span> <span class="s2">&quot;finetune_small&quot;</span><span class="p">,</span> <span class="s2">&quot;train_small_combined&quot;</span><span class="p">,</span> <span class="s2">&quot;train_base&quot;</span><span class="p">]</span>
@@ -15663,7 +15770,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">folders</span> <span class="o">=</span> <span class="p">[</span>
@@ -15727,7 +15834,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_results</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Metric&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s2">&quot;(MoverScore)&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)])</span>
@@ -15793,7 +15900,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">load_dataset</span><span class="p">(</span><span class="s2">&quot;StellarMilk/newsqa&quot;</span><span class="p">)</span>
@@ -15809,7 +15916,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataset</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;paragraph&quot;</span><span class="p">]</span>
@@ -15828,7 +15935,7 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
 
 
 
@@ -15848,7 +15955,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fine_tuned_paragraphs</span><span class="p">,</span> <span class="n">fine_tuned_failed</span> <span class="o">=</span> <span class="n">load_paragraphs</span><span class="p">(</span>
@@ -15886,7 +15993,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_paragraph</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">baseline_paragraphs</span><span class="o">=</span><span class="n">baseline_paragraphs</span><span class="p">,</span> <span class="n">trained_paragraphs</span><span class="o">=</span><span class="n">fine_tuned_paragraphs</span><span class="p">):</span>
@@ -16032,7 +16139,7 @@ lawmakers to pay for new programs, dollar-for-dollar, with budget cuts elsewhere
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">failed_indices</span> <span class="o">=</span> <span class="p">[]</span>
@@ -16170,7 +16277,7 @@ question: Why are green products often more expensive than ones that don&#39;t s
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
@@ -16252,7 +16359,7 @@ question: Who has been heavily criticized by conservatives because his plan incl
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">total_questions</span> <span class="o">=</span> <span class="mi">0</span>
@@ -16318,7 +16425,7 @@ question: Who has been heavily criticized by conservatives because his plan incl
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">paragraph</span> <span class="ow">in</span> <span class="n">baseline_failed</span><span class="p">:</span>
@@ -16404,7 +16511,7 @@ Number of failed paragraphs in trained combined model: 81
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_paragraph</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -16540,7 +16647,7 @@ Robert Gibbs
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">bigger_folders</span> <span class="o">=</span> <span class="p">[</span>
@@ -16623,7 +16730,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">baseline_big_paragraphs</span><span class="p">,</span> <span class="n">baseline_big_failed</span> <span class="o">=</span> <span class="n">load_paragraphs</span><span class="p">(</span>
@@ -16660,7 +16767,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_paragraph</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">baseline_paragraphs</span><span class="o">=</span><span class="n">baseline_big_paragraphs</span><span class="p">,</span> <span class="n">trained_paragraphs</span><span class="o">=</span><span class="n">trained_big_paragraphs</span><span class="p">)</span>
@@ -16794,7 +16901,7 @@ is &#34;a country that in many ways represents the heart of the Arab world,&#34;
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Number of failed paragraphs in base model: </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">paragraph</span> <span class="ow">in</span> <span class="n">baseline_big_failed</span> <span class="k">if</span> <span class="n">paragraph</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
@@ -16850,7 +16957,7 @@ Number of failed paragraphs in modified finetuned small model: 24
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">420</span><span class="p">)</span>
